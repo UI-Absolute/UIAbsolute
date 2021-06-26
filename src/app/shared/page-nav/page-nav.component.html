@@ -1,0 +1,17 @@
+<div class="border-left position-fixed">
+  <ul class="list-style-none text-secondary" *ngIf="navStructure">
+    <li *ngFor="let item of navStructure">
+      <a [routerLink]="item.routerUrl" [fragment]="item.fragment">{{item.name}}</a>
+      <ul *ngIf="item.children" class="list-style-none text-secondary">
+        <li *ngFor="let child of item.children">
+          <a [routerLink]="child.routerUrl" [fragment]="child.fragment">{{child.name}}</a>
+          <ul *ngIf="child.children" class="list-style-none text-secondary">
+            <li *ngFor="let grandChild of child.children">
+              <a [routerLink]="grandChild.routerUrl" [fragment]="grandChild.fragment">{{grandChild.name}}</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>

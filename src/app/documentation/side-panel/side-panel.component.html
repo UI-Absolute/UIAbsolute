@@ -1,0 +1,31 @@
+<div class='container-fluid side-panel'>
+  <div class='row'>
+    <div class='col-md-12 col-styling'>
+      <form class="example" action="">
+        <input
+          class="ng-pristine ng-valid ng-touched"
+          type="text"
+          aria-label="Search in docs"
+          name="search"
+          placeholder="Search..."
+          [(ngModel)]="filterargs"
+          autocomplete="off">
+      </form>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-md-12 col-styling font-weight-bold link' [routerLink]="['/documentation/getting-started']">
+      <span>Getting Started</span>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-md-12 col-styling font-weight-bold link' [routerLink]="['/documentation']">
+      <span>Documentation</span>
+    </div>
+  </div>
+  <div class='row' *ngFor="let component of components | searchFilter:filterargs">
+    <div class='col-md-12 col-styling link' [routerLink]="component.navigationUrl">
+      <span>{{component.name}}</span>
+    </div>
+  </div>
+</div>

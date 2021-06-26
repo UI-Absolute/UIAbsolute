@@ -1,0 +1,31 @@
+.logo {
+  height: 38px;
+  margin: 8px;
+}
+.header-height {
+  height:57px;
+  border-bottom: 3px solid #c5ccd6;
+  background-color: #183153;
+}
+.version-style {
+  flex: 0 0 12.333333%;
+  max-width: 12.3333%;
+}
+.icon-style {
+  color:#fff;
+  font-size: 24px;
+  cursor:pointer;
+  flex: 0 0 4.333333%;
+  max-width: 4.3333%;
+}
+.version {
+  font-size: 14px;
+  padding: 5px;
+  height: 100%;
+  float: right;
+  padding-top: 16px;
+  color: white;
+}
+.col-height {
+  height: inherit;
+}

@@ -1,0 +1,4 @@
+<div class="text-center d-inline-block">
+  <div class="spinner-border" [ngClass]="[spinnerSettings.color, spinnerSettings.size]" [ngStyle]="{'animation-duration' : spinnerSettings.speed ? spinnerSettings.speed : '0.75s'}" role="status"></div>
+  <span class="d-block" *ngIf="loadingText">{{loadingText}}</span>
+</div>

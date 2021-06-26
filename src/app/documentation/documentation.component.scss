@@ -1,0 +1,18 @@
+.header-area {
+  position:fixed;
+  width:100%;
+  z-index: 99;
+}
+.side-panel {
+  width: 13%;
+  height: calc(100vh - 57px);
+  top:57px;
+  position:fixed;
+}
+.router-area {
+  padding: 1rem;
+  width: 87%;
+  position:absolute;
+  left:13%;
+  top:57px;
+}

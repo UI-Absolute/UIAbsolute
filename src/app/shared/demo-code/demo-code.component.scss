@@ -1,0 +1,25 @@
+.highlight {
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  background-color: #f8f9fa;
+}
+
+.nav-header {
+  margin-top: 2rem;
+}
+
+:host ::ng-deep .import-initial {
+  color: #C586C0;
+}
+
+:host ::ng-deep .import-braces {
+  color: #FFC813;
+}
+
+:host ::ng-deep .import-module {
+  color: #9CDCFE;
+}
+
+:host ::ng-deep .import-package {
+  color: #CE9178;
+}

@@ -1,0 +1,97 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Buttons</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class='col-md-12'>
+          <span>Examples and Documentations for Badges.</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12" id="usage">
+          <h2 class="dc-header">Usage</h2>
+          <app-demo-code [demoCode]="demoCode[0]"></app-demo-code>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="dc-header" id="example">Example</h2>
+          <h3 class="dc-sub-header" id="basic">Basic</h3>
+          <div class="demo-preview border">
+            <uia-button [value]="'Primary'"></uia-button>
+          </div>
+          <app-demo-code [demoCode]="demoCode[1]"></app-demo-code>
+          <h3 class="dc-sub-header" id="colors">Colors</h3>
+          <div class="demo-preview border">
+            <uia-button [settings]="settings" [value]="'Primary'" class="mr-2">
+            </uia-button>
+            <uia-button [settings]="secondarySettings" [value]="'Secondary'" class="mr-2">
+            </uia-button>
+            <uia-button [settings]="warningSettings" [value]="'Warning'" class="mr-2">
+            </uia-button>
+            <uia-button [settings]="successSettings" [value]="'Success'" class="mr-2">
+            </uia-button>
+            <uia-button [settings]="dangerSettings" [value]="'Danger'" class="mr-2">
+            </uia-button>
+            <uia-button [settings]="infoSettings" [value]="'Info'" class="mr-2">
+            </uia-button>
+            <uia-button [settings]="lightSettings" [value]="'Light'" class="mr-2">
+            </uia-button>
+            <uia-button [settings]="darkSettings" [value]="'Dark'">
+            </uia-button>
+          </div>
+          <app-demo-code [demoCode]="demoCode[2]"></app-demo-code>
+          <h3 class="dc-sub-header" id="outlineButtons">Outline Buttons</h3>
+          <div class="demo-preview border">
+            <uia-button [settings]="primaryOutlineSettings" [value]="'Primary'" class="mr-2">
+            </uia-button>
+            <uia-button [settings]="secondaryOutlineSettings" [value]="'Secondary'" class="mr-2">
+            </uia-button>
+            <uia-button [settings]="warningOutlineSettings" [value]="'Warning'" class="mr-2">
+            </uia-button>
+            <uia-button [settings]="successOutlineSettings" [value]="'Success'" class="mr-2">
+            </uia-button>
+            <uia-button [settings]="dangerOutlineSettings" [value]="'Danger'" class="mr-2">
+            </uia-button>
+            <uia-button [settings]="infoOutlineSettings" [value]="'Info'" class="mr-2">
+            </uia-button>
+            <uia-button [settings]="lightOutlineSettings" [value]="'Light'" class="mr-2">
+            </uia-button>
+            <uia-button [settings]="darkOutlineSettings" [value]="'Dark'">
+            </uia-button>
+          </div>
+          <app-demo-code [demoCode]="demoCode[3]"></app-demo-code>
+          <h3 class="dc-sub-header" id="sizes">Sizes</h3>
+          <h4 class="dc-sub-header" id="small">Small</h4>
+          <div class="demo-preview border">
+            <uia-button [settings]="smallPrimarySettings" [value]="'Primary'" class="mr-2">
+            </uia-button>
+            <uia-button [settings]="smallPrimaryOutlineSettings" [value]="'Primary'">
+            </uia-button>
+          </div>
+          <app-demo-code [demoCode]="demoCode[4]"></app-demo-code>
+          <h4 class="dc-sub-header" id="large">Large</h4>
+          <div class="demo-preview border">
+            <uia-button [settings]="largePrimarySettings" [value]="'Primary'" class="mr-2">
+            </uia-button>
+            <uia-button [settings]="largePrimaryOutlineSettings" [value]="'Primary'">
+            </uia-button>
+          </div>
+          <app-demo-code [demoCode]="demoCode[5]"></app-demo-code>
+          <h3 class="dc-sub-header" id="toggleStates">Toggle States</h3>
+          <div class="demo-preview border">
+            <uia-button-toggle [settings]="settingsToggle" [value]="'Primary'" [checked]="true"></uia-button-toggle>
+          </div>
+          <app-demo-code [demoCode]="demoCode[6]"></app-demo-code>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <app-page-nav [navStructure]="pageNav"></app-page-nav>
+    </div>
+  </div>
+</div>
