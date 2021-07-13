@@ -31,7 +31,7 @@ export class DemoRadioComponent implements OnInit {
 
   this.settings = {
     color: UIA_THEME.PRIMARY
-  }
+  };
 
   this.secondarySettings = {
     color: UIA_THEME.SECONDARY
@@ -57,7 +57,7 @@ export class DemoRadioComponent implements OnInit {
   this.horizontalRadioSettings = {
     color: UIA_THEME.SUCCESS,
     align: RADIO_ALIGN.HORIZONTAL
-  }
+  };
 
   }
 

@@ -1,7 +1,7 @@
 export const PAGE_NAV = [{
   name: 'Usage', routerUrl: '/documentation/badges', fragment: 'usage', children: []
 }, {
-  name: 'Examples', routerUrl: '/documentation/badges', fragment: 'examples', children:[
+  name: 'Examples', routerUrl: '/documentation/badges', fragment: 'examples', children: [
     {
       name: 'Basic', routerUrl: '/documentation/badges', fragment: 'basic', children: []
     }, {
@@ -20,7 +20,8 @@ export const DEMO_CODE = [{
   type: 'usage',
   htmlCode: ``,
   componentCode: `
-  <span class="import-initial">import </span><span class="import-braces">{</span><span> UIABadgesModule </span><span class="import-braces">}</span><span class="import-initial"> from </span><span class="import-package">'ui-absolute'</span>;
+  <span class="import-initial">import </span><span class="import-braces">{</span><span> UIABadgesModule </span><span class="import-braces">}</span>`
+  + `<span class="import-initial"> from </span><span class="import-package">'ui-absolute'</span>;
 
   <span class="import-initial">@NgModule({</span>
     <span>imports: </span><span class="import-package">[ UIABadgesModule,... ]</span>
@@ -49,7 +50,8 @@ export const DEMO_CODE = [{
   name: 'Badges_in_Button',
   type: 'code',
   htmlCode: `
-  &lt;button type="button" class="btn btn-primary"&gt;Notifications &lt;uia-badge [settings]="notificationSettings" [value]="'7'"&gt;&lt;/uia-badge&gt;&lt;/button&gt;`,
+  &lt;button type="button" class="btn btn-primary"&gt;Notifications &lt;uia-badge [settings]="notificationSettings"` +
+  `[value]="'7'"&gt;&lt;/uia-badge&gt;&lt;/button&gt;`,
   componentCode: `
   this.notificationSettings = {
     'bg_color': UIA_THEME.LIGHT,
@@ -179,4 +181,4 @@ export const DEMO_CODE = [{
     'bg_color': UIA_THEME.DARK,
     'shape': BADGES_SHAPE.ROUNDED
   };`
-}]
+}];

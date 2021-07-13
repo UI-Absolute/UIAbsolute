@@ -1,7 +1,7 @@
 export const PAGE_NAV = [{
   name: 'Usage', routerUrl: '/documentation/buttons', fragment: 'usage', children: []
 }, {
-  name: 'Examples', routerUrl: '/documentation/buttons', fragment: 'examples', children:[
+  name: 'Examples', routerUrl: '/documentation/buttons', fragment: 'examples', children: [
     {
       name: 'Basic', routerUrl: '/documentation/buttons', fragment: 'basic', children: []
     }, {
@@ -11,11 +11,11 @@ export const PAGE_NAV = [{
     }, {
       name: 'Sizes', routerUrl: '/documentation/buttons', fragment: 'sizes', children: [
         {
-          name: 'Small', routerUrl: '/documentation/buttons', fragment: 'small', children:[]
-        },{
-          name: 'Large', routerUrl: '/documentation/buttons', fragment: 'large', children:[]
+          name: 'Small', routerUrl: '/documentation/buttons', fragment: 'small', children: []
+        }, {
+          name: 'Large', routerUrl: '/documentation/buttons', fragment: 'large', children: []
         }]
-    },{
+    }, {
       name: 'Toggle States', routerUrl: '/documentation/buttons', fragment: 'toggleStates', children: []
     },
   ]
@@ -27,7 +27,9 @@ export const DEMO_CODE = [{
   type: 'usage',
   htmlCode: ``,
   componentCode: `
-  <span class="import-initial">import </span><span class="import-braces">{</span><span> UIAButtonsModule </span><span class="import-braces">}</span><span class="import-initial"> from </span><span class="import-package">'ui-absolute'</span>;
+  <span class="import-initial">import </span><span class="import-braces">{</span><span> UIAButtonsModule </span>`
+  +`<span class="import-braces">}</span>`
+  + `<span class="import-initial"> from </span><span class="import-package">'ui-absolute'</span>;
 
   <span class="import-initial">@NgModule({</span>
     <span>imports: </span><span class="import-package">[ UIAButtonsModule,... ]</span>
@@ -176,4 +178,4 @@ export const DEMO_CODE = [{
     bg_color: UIA_THEME.PRIMARY
   };`
 },
-]
+];

@@ -152,4 +152,4 @@ export const DEMO_CODE = [{
     color: UIA_THEME.PRIMARY,
     size: SWITCHES_SIZE.DEFAULT
   };`
-}]
+}];

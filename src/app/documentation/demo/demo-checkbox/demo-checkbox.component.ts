@@ -31,7 +31,7 @@ export class DemoCheckboxComponent implements OnInit {
 
     this.settings = {
       color: UIA_THEME.PRIMARY
-    }
+    };
 
     this.secondarySettings = {
       color: UIA_THEME.SECONDARY
@@ -57,7 +57,7 @@ export class DemoCheckboxComponent implements OnInit {
     this.horizontalCheckboxSettings = {
       color: UIA_THEME.SUCCESS,
       align: CHECKBOX_ALIGN.HORIZONTAL
-    }
+    };
 
   }
 

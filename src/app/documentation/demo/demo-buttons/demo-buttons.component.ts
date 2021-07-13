@@ -45,78 +45,78 @@ export class DemoButtonsComponent implements OnInit {
     };
     this.secondarySettings = {
       bg_color: UIA_THEME.SECONDARY
-    }
+    };
     this.warningSettings = {
       bg_color: UIA_THEME.WARNING
-    }
+    };
     this.successSettings = {
       bg_color: UIA_THEME.SUCCESS
-    }
+    };
     this.dangerSettings = {
       bg_color: UIA_THEME.DANGER
-    }
+    };
     this.infoSettings = {
       bg_color: UIA_THEME.INFO
-    }
+    };
     this.lightSettings = {
       bg_color: UIA_THEME.LIGHT
-    }
+    };
     this.darkSettings = {
       bg_color: UIA_THEME.DARK
-    }
+    };
     this.primaryOutlineSettings = {
       bg_color: UIA_THEME.PRIMARY,
       isOutline: true
-    }
+    };
     this.secondaryOutlineSettings = {
       bg_color: UIA_THEME.SECONDARY,
       isOutline: true
-    }
+    };
     this.warningOutlineSettings = {
       bg_color: UIA_THEME.WARNING,
       isOutline: true
-    }
+    };
     this.successOutlineSettings = {
       bg_color: UIA_THEME.SUCCESS,
       isOutline: true
-    }
+    };
     this.dangerOutlineSettings = {
       bg_color: UIA_THEME.DANGER,
       isOutline: true
-    }
+    };
     this.infoOutlineSettings = {
       bg_color: UIA_THEME.INFO,
       isOutline: true
-    }
+    };
     this.lightOutlineSettings = {
       bg_color: UIA_THEME.LIGHT,
       isOutline: true
-    }
+    };
     this.darkOutlineSettings = {
       bg_color: UIA_THEME.DARK,
       isOutline: true
-    }
+    };
     this.smallPrimarySettings = {
       bg_color: UIA_THEME.PRIMARY,
       size: BUTTON_SIZE.SMALL
-    }
+    };
     this.smallPrimaryOutlineSettings = {
       bg_color: UIA_THEME.PRIMARY,
       isOutline: true,
       size: BUTTON_SIZE.SMALL
-    }
+    };
     this.largePrimarySettings = {
       bg_color: UIA_THEME.PRIMARY,
       size: BUTTON_SIZE.LARGE
-    }
+    };
     this.largePrimaryOutlineSettings = {
       bg_color: UIA_THEME.PRIMARY,
       isOutline: true,
       size: BUTTON_SIZE.LARGE
-    }
+    };
     this.settingsToggle = {
       bg_color: UIA_THEME.PRIMARY
-    }
+    };
 
   }
 

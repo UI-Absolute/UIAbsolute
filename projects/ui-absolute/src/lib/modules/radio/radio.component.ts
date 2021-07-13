@@ -10,10 +10,10 @@ export class RadioComponent implements OnInit {
 
   @Input() settings: RadioConfig;
 
-  radioSettings= {
+  radioSettings = {
     color: '',
     align: ''
-  }
+  };
 
   constructor() { }
 

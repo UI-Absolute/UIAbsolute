@@ -28,4 +28,4 @@ export const DEMO_CODE = [{
     <span>imports: </span><span class="import-package">[ UIARadioModule,... ]</span>
   <span class="import-initial">})</span>
 
-`}]
+`}];

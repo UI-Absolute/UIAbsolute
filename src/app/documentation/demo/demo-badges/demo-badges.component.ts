@@ -39,73 +39,73 @@ export class DemoBadgesComponent implements OnInit {
     this.demoCode = DEMO_CODE;
 
     this.settings = {
-      'bg_color': UIA_THEME.PRIMARY,
-      'shape': BADGES_SHAPE.DEFAULT
+      bg_color: UIA_THEME.PRIMARY,
+      shape: BADGES_SHAPE.DEFAULT
     };
     this.notificationSettings = {
-      'bg_color': UIA_THEME.LIGHT,
-      'shape': BADGES_SHAPE.ROUNDED
-    }
+      bg_color: UIA_THEME.LIGHT,
+      shape: BADGES_SHAPE.ROUNDED
+    };
     this.secondarySettings = {
-      'bg_color': UIA_THEME.SECONDARY,
-      'shape': BADGES_SHAPE.DEFAULT
-    }
+      bg_color: UIA_THEME.SECONDARY,
+      shape: BADGES_SHAPE.DEFAULT
+    };
     this.warningSettings = {
-      'bg_color': UIA_THEME.WARNING,
-      'shape': BADGES_SHAPE.DEFAULT
-    }
+      bg_color: UIA_THEME.WARNING,
+      shape: BADGES_SHAPE.DEFAULT
+    };
     this.successSettings = {
-      'bg_color': UIA_THEME.SUCCESS,
-      'shape': BADGES_SHAPE.DEFAULT
-    }
+      bg_color: UIA_THEME.SUCCESS,
+      shape: BADGES_SHAPE.DEFAULT
+    };
     this.dangerSettings = {
-      'bg_color': UIA_THEME.DANGER,
-      'shape': BADGES_SHAPE.DEFAULT
-    }
+      bg_color: UIA_THEME.DANGER,
+      shape: BADGES_SHAPE.DEFAULT
+    };
     this.infoSettings = {
-      'bg_color': UIA_THEME.INFO,
-      'shape': BADGES_SHAPE.DEFAULT
-    }
+      bg_color: UIA_THEME.INFO,
+      shape: BADGES_SHAPE.DEFAULT
+    };
     this.lightSettings = {
-      'bg_color': UIA_THEME.LIGHT,
-      'shape': BADGES_SHAPE.DEFAULT
-    }
+      bg_color: UIA_THEME.LIGHT,
+      shape: BADGES_SHAPE.DEFAULT
+    };
     this.darkSettings = {
-      'bg_color': UIA_THEME.DARK,
-      'shape': BADGES_SHAPE.DEFAULT
-    }
+      bg_color: UIA_THEME.DARK,
+      shape: BADGES_SHAPE.DEFAULT
+    };
     this.primaryPill = {
-      'bg_color': UIA_THEME.PRIMARY,
-      'shape': BADGES_SHAPE.ROUNDED
+      bg_color: UIA_THEME.PRIMARY,
+      shape: BADGES_SHAPE.ROUNDED
     };
     this.secondaryPill = {
-      'bg_color': UIA_THEME.SECONDARY,
-      'shape': BADGES_SHAPE.ROUNDED
-    }
+      bg_color: UIA_THEME.SECONDARY,
+      shape: BADGES_SHAPE.ROUNDED
+    };
     this.warningPill = {
-      'bg_color': UIA_THEME.WARNING,
-      'shape': BADGES_SHAPE.ROUNDED
-    }
+      bg_color: UIA_THEME.WARNING,
+      shape: BADGES_SHAPE.ROUNDED
+    };
     this.successPill = {
-      'bg_color': UIA_THEME.SUCCESS,
-      'shape': BADGES_SHAPE.ROUNDED
-    }
+      bg_color: UIA_THEME.SUCCESS,
+      shape: BADGES_SHAPE.ROUNDED
+    };
     this.dangerPill = {
-      'bg_color': UIA_THEME.DANGER,
-      'shape': BADGES_SHAPE.ROUNDED
-    }
+      bg_color: UIA_THEME.DANGER,
+      shape: BADGES_SHAPE.ROUNDED
+    };
     this.infoPill = {
-      'bg_color': UIA_THEME.INFO,
-      'shape': BADGES_SHAPE.ROUNDED
-    }
+      bg_color: UIA_THEME.INFO,
+      shape: BADGES_SHAPE.ROUNDED
+    };
     this.lightPill = {
-      'bg_color': UIA_THEME.LIGHT,
-      'shape': BADGES_SHAPE.ROUNDED
-    }
+      bg_color: UIA_THEME.LIGHT,
+      shape: BADGES_SHAPE.ROUNDED
+    };
     this.darkPill = {
-      'bg_color': UIA_THEME.DARK,
-      'shape': BADGES_SHAPE.ROUNDED
-    }
+      bg_color: UIA_THEME.DARK,
+      shape: BADGES_SHAPE.ROUNDED
+    };
   }
 
 }

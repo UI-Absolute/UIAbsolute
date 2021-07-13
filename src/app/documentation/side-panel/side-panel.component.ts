@@ -16,7 +16,7 @@ export class SidePanelComponent implements OnInit {
     this.components = [{
       name: 'File Uploader',
       navigationUrl: '/documentation/file-uploader'
-    },{
+    }, {
       name: 'Buttons',
       navigationUrl: '/documentation/buttons'
     },
@@ -80,7 +80,7 @@ export class SidePanelComponent implements OnInit {
       name: 'Treeview',
       navigationUrl: '/documentation/underconstruction'
     }];
-    this.components.sort((a, b) => a.name.localeCompare(b.name))
+    this.components.sort((a, b) => a.name.localeCompare(b.name));
   }
 
 }

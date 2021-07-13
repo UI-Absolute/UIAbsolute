@@ -75,12 +75,12 @@ export class DemoSpinnersComponent implements OnInit {
       color: UIA_THEME.PRIMARY,
       size: SPINNERS_SIZE.DEFAULT,
       speed: SPINNERS_SPEED.SLOW
-    }
+    };
     this.fastSpinnerSettings = {
       color: UIA_THEME.PRIMARY,
       size: SPINNERS_SIZE.DEFAULT,
       speed: SPINNERS_SPEED.FAST
-    }
+    };
   }
 
 }

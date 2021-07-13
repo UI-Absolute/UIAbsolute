@@ -160,4 +160,4 @@ export const DEMO_CODE = [{
   color: UIA_THEME.LIGHT,
   size: SPINNERS_SIZE.SMALL
 };`
-}]
+}];

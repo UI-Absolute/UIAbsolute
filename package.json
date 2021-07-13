@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "lib": "ng build ui-absolute",
     "prebuild": "npm --no-git-tag-version version patch",
     "build": "ng build --prod --base-href ./",
     "test": "ng test",

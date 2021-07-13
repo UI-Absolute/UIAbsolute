@@ -15,7 +15,7 @@ import { DemoCodeComponent } from './demo-code/demo-code.component';
     CommonModule,
     RouterModule,
   ],
-  exports:[
+  exports: [
     SearchFilterPipe,
     PageNavComponent,
     DemoCodeComponent
