@@ -28,7 +28,7 @@ export const DEMO_CODE = [{
   htmlCode: ``,
   componentCode: `
   <span class="import-initial">import </span><span class="import-braces">{</span><span> UIAButtonsModule </span>`
-  +`<span class="import-braces">}</span>`
+  + `<span class="import-braces">}</span>`
   + `<span class="import-initial"> from </span><span class="import-package">'ui-absolute'</span>;
 
   <span class="import-initial">@NgModule({</span>

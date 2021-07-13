@@ -7,6 +7,8 @@
     "lib": "ng build ui-absolute",
     "prebuild": "npm --no-git-tag-version version patch",
     "build": "ng build --prod --base-href ./",
+    "build-ci": "ng build ui-absolute --prod",
+    "test-ci": "ng test ui-absolute --watch=false --browsers=ChromeHeadless",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

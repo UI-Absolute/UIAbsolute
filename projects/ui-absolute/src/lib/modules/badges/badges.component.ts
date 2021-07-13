@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { BadgesConfig, UIA_THEME, BADGES_SHAPE } from './../../../models';
 
 @Component({
-  selector: 'uia-badge',
+  selector: 'lib-uia-badge',
   templateUrl: './badges.component.html',
   styleUrls: ['./badges.component.scss']
 })
@@ -59,6 +59,7 @@ export class BadgesComponent implements OnInit {
     switch (settings.shape) {
       case BADGES_SHAPE.ROUNDED:
         this.badgeSettings.shape = 'rounded-pill';
+        break;
       default:
         this.badgeSettings.shape = '';
     }

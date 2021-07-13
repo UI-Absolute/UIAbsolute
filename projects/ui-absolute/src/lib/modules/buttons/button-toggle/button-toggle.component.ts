@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ButtonsToggleConfig, BUTTON_SIZE, UIA_THEME } from './../../../../models';
 
 @Component({
-  selector: 'uia-button-toggle',
+  selector: 'lib-uia-button-toggle',
   templateUrl: './button-toggle.component.html',
   styleUrls: ['./button-toggle.component.scss']
 })

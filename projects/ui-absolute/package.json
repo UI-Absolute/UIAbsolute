@@ -4,5 +4,27 @@
   "peerDependencies": {
     "@angular/common": "^8.0.3",
     "@angular/core": "^8.0.3"
+  },
+  "author": {
+    "name": "UI Absolute",
+    "email": "support@uiabsolute.com"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UI-Absolute/UIAbsolute"
+  },
+  "description": "A one stop shop for all your UI needs",
+  "keywords": [
+    "HTML",
+    "CSS",
+    "javascript",
+    "Angular"
+  ],
+  "homepage": "https://github.com/UI-Absolute/UIAbsolute#readme",
+  "bugs": {
+    "url": "https://github.com/UI-Absolute/UIAbsolute/issues"
   }
 }

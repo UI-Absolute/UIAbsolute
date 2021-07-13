@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { RadioConfig, RADIO_ALIGN, UIA_THEME } from './../../../models';
 
 @Component({
-  selector: 'uia-radio',
+  selector: 'lib-uia-radio',
   templateUrl: './radio.component.html',
   styleUrls: ['./radio.component.scss']
 })

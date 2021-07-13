@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ButtonsConfig, BUTTON_SIZE, UIA_THEME } from './../../../models';
 
 @Component({
-  selector: 'uia-button',
+  selector: 'lib-uia-button',
   templateUrl: './buttons.component.html',
   styleUrls: ['./buttons.component.scss']
 })
