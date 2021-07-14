@@ -1,19 +1,33 @@
-sudo: required
-addons:
-  chrome: stable
+dist: trusty
+sudo: false
 language: node_js
-node_js:
-- node
+node_js: node
+
+install:
+- npm ci
+cache:
+  directories:
+  - $HOME/.npm
 script:
-- npm run test-ci
-- npm run build-ci
-before_deploy:
-  - cd dist/ui-absolute
+- npm run lint-lib
+- npm run build-lib && npm run build
+
 deploy:
-  provider: npm
+  provider: pages
   email: "$NPM_EMAIL"
   api_key: "$NPM_API_TOKEN"
-  skip_cleanup: true
+  skip-cleanup: true
+  keep-history: true
+  local-dir: dist/ui-absolute
   on:
-    tags: true
-    repo: UI-Absolute/UIAbsolute
+    branch: main
+
+git:
+  depth: 3
+
+after_success:
+  - npm run travis-deploy-once "npm run semantic-release"
+
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
