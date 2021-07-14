@@ -16,7 +16,7 @@
     "semantic-release": "semantic-release"
   },
   "release": {
-    "pkgRoot": "dist/angular-exemplify"
+    "pkgRoot": "dist/ui-absolute"
   },
   "commitlint": {
     "extends": [
