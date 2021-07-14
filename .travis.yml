@@ -9,7 +9,7 @@ cache:
   directories:
   - $HOME/.npm
 script:
-- npm run lint-lib
+- npm run lint
 - npm run build-lib && npm run build
 
 deploy:
