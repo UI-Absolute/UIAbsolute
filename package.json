@@ -1,13 +1,13 @@
 {
   "name": "UIAbsolute",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "lib": "ng build ui-absolute",
     "prebuild": "npm --no-git-tag-version version patch",
     "build": "ng build --prod --base-href ./",
-    "build-ci": "ng build ui-absolute --prod",
+    "build-ci": "ng build ui-absolute",
     "test-ci": "ng test ui-absolute --watch=false --browsers=ChromeHeadless",
     "test": "ng test",
     "lint": "ng lint",
