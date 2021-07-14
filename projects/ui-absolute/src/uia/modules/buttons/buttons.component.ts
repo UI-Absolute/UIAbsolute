@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ButtonsConfig, BUTTON_SIZE, UIA_THEME } from './../../../models';
+import { ButtonsConfig, BUTTON_SIZE, UIA_THEME } from '../../../models';
 
 @Component({
-  selector: 'lib-uia-button',
+  selector: 'uia-button',
   templateUrl: './buttons.component.html',
   styleUrls: ['./buttons.component.scss']
 })

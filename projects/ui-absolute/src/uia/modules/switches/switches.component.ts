@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { SwitchesConfig, SWITCHES_SIZE, UIA_THEME } from './../../../models';
+import { SwitchesConfig, SWITCHES_SIZE, UIA_THEME } from '../../../models';
 
 @Component({
-  selector: 'lib-uia-switch',
+  selector: 'uia-switch',
   templateUrl: './switches.component.html',
   styleUrls: ['./switches.component.scss']
 })

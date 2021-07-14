@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { BadgesConfig, UIA_THEME, BADGES_SHAPE } from './../../../models';
+import { BadgesConfig, UIA_THEME, BADGES_SHAPE } from '../../../models';
 
 @Component({
-  selector: 'lib-uia-badge',
+  selector: 'uia-badge',
   templateUrl: './badges.component.html',
   styleUrls: ['./badges.component.scss']
 })

@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { SpinnersConfig, UIA_THEME, SPINNERS_SIZE, SPINNERS_SPEED } from './../../../models';
+import { SpinnersConfig, UIA_THEME, SPINNERS_SIZE, SPINNERS_SPEED } from '../../../models';
 
 @Component({
-  selector: 'lib-uia-spinner',
+  selector: 'uia-spinner',
   templateUrl: './spinners.component.html',
   styleUrls: ['./spinners.component.scss']
 })

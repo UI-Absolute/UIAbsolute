@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { CheckboxConfig, CHECKBOX_ALIGN, UIA_THEME } from './../../../models';
+import { CheckboxConfig, CHECKBOX_ALIGN, UIA_THEME } from '../../../models';
 
 @Component({
-  selector: 'lib-uia-checkbox',
+  selector: 'uia-checkbox',
   templateUrl: './checkbox.component.html',
   styleUrls: ['./checkbox.component.scss']
 })
