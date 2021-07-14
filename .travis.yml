@@ -14,8 +14,7 @@ script:
 
 deploy:
   provider: pages
-  email: "$NPM_EMAIL"
-  api_key: "$NPM_API_TOKEN"
+  github-token: $GITHUB_TOKEN
   skip-cleanup: true
   keep-history: true
   local-dir: dist/ui-absolute
