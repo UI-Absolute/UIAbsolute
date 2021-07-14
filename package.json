@@ -1,0 +1,43 @@
+{
+  "name": "ui-absolute",
+  "version": "0.0.0-semantically-released",
+  "peerDependencies": {
+    "@angular/common": "^8.0.3",
+    "@angular/core": "^8.0.3"
+  },
+  "author": {
+    "name": "UI Absolute",
+    "email": "support@uiabsolute.com"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UI-Absolute/UIAbsolute"
+  },
+  "description": "A one stop shop for all your UI needs",
+  "keywords": [
+    "HTML",
+    "CSS",
+    "javascript",
+    "Angular"
+  ],
+  "homepage": "https://github.com/UI-Absolute/UIAbsolute#readme",
+  "bugs": {
+    "url": "https://github.com/UI-Absolute/UIAbsolute/issues"
+  },
+  "main": "bundles/ui-absolute.umd.js",
+  "module": "fesm5/ui-absolute.js",
+  "es2015": "fesm2015/ui-absolute.js",
+  "esm5": "esm5/ui-absolute.js",
+  "esm2015": "esm2015/ui-absolute.js",
+  "fesm5": "fesm5/ui-absolute.js",
+  "fesm2015": "fesm2015/ui-absolute.js",
+  "typings": "ui-absolute.d.ts",
+  "metadata": "ui-absolute.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
