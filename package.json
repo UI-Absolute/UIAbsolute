@@ -1,6 +1,6 @@
 {
   "name": "UIAbsolute",
-  "version": "0.0.10",
+  "version": "1.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

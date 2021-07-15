@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DEMO_CODE } from './documentation-details.constants';
 
 @Component({
   selector: 'app-documentation-details',
@@ -6,19 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./documentation-details.component.scss']
 })
 export class DocumentationDetailsComponent implements OnInit {
-  demoCode: any[];
+  demoCode;
 
   constructor() { }
 
   ngOnInit() {
-    this.demoCode = [{
-      id: 0,
-      name: 'Usage',
-      type: 'usage',
-      htmlCode: ``,
-      componentCode: `
-      npm install ui-absolute --save
-    `}]
+    this.demoCode = DEMO_CODE;
   }
 
 }

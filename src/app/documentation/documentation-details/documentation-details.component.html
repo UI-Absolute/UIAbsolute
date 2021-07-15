@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid p-4">
     <div class="row">
         <div class="col-md-3">
 
@@ -22,11 +22,78 @@
 
         </div>
     </div>
+    <br><br>
     <div class="row">
         <div class="col-md-12">
             <h2 class="dc-header">Usage</h2>
+            <div class="sub-header">Install using <b>npm</b></div>
             <app-demo-code [demoCode]="demoCode[0]"></app-demo-code>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="sub-header">Add desired package to <b>NgModule</b> imports:</div>
+            <app-demo-code [demoCode]="demoCode[1]"></app-demo-code>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="sub-header">Add desired component to <b>HTML</b> page:</div>
+            <app-demo-code [demoCode]="demoCode[2]"></app-demo-code>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="sub-header">Bootstrap is required to make UI Absolute up and running</div>
+            <div class="sub-header">Using <b>index.html</b>:</div>
+            <app-demo-code [demoCode]="demoCode[3]"></app-demo-code>
+            <div class="sub-header">
+            or, <br>
+            Using <b>npm</b>:</div>
+            <app-demo-code [demoCode]="demoCode[4]"></app-demo-code>
+            <div class="sub-header">Once npm command is executed, add following to <b>angular.json</b> of your project:</div>
+            <app-demo-code [demoCode]="demoCode[5]"></app-demo-code>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Compatibility</h2>
+            <table>
+                <tr>
+                    <th>
+                        ui-absolute
+                    </th>
+                    <th>
+                        Bootstrap
+                    </th>
+                    <th>
+                        Angular
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        1.X.X
+                    </td>
+                    <td>
+                        3.X.X or 4.X.X
+                    </td>
+                    <td>
+                        8.X.X
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-md-12">
+            <h4>License</h4>
+            <a>MIT</a>
+        </div>
+    </div>
 </div>
+<br>
+<br>
+<app-footer></app-footer>
 

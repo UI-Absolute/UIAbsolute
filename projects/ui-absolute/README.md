@@ -1,24 +1,76 @@
-# UiAbsolute
+<div align="center">
+    <img class="logo" src="https://uiabsolute.com/assets/images/UI_Absolute_inline.png" style="height: 60px;">
+    <br>
+    <a href="https://npmjs.org/ui-absolute">
+        <img src="https://api.travis-ci.com/UI-Absolute/UIAbsolute.svg?branch=main">
+    </a>
+    &nbsp;&nbsp;
+    <a href="https://npmjs.org/ui-absolute">
+        <img src="https://img.shields.io/npm/v/ui-absolute/latest.svg" alt="npm latest version">
+    </a>
+    <br>
+    <a href="https://npmjs.org/ui-absolute">
+        <img src="https://img.shields.io/npm/dm/ui-absolute.svg" alt="npm downloads">
+    </a>
+</div>
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+## Usage
 
-## Code scaffolding
+#### Install using <b>npm</b>
 
-Run `ng generate component component-name --project ui-absolute` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ui-absolute`.
-> Note: Don't forget to add `--project ui-absolute` or else it will be added to the default project in your `angular.json` file. 
+```
+    npm install ui-absolute --save
+```
 
-## Build
+#### Add desired package to <b>NgModule</b> imports:
 
-Run `ng build ui-absolute` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+    import { UIABadgesModule } from 'ui-absolute';
+  
+    @NgModule({
+      imports: [ UIABadgesModule,... ]
+    })
+```
 
-## Publishing
+#### Add desired component to <b>HTML</b> page:
 
-After building your library with `ng build ui-absolute`, go to the dist folder `cd dist/ui-absolute` and run `npm publish`.
+```
+    <uia-badge [value]="'Hello'"></uia-badge>
+```
 
-## Running unit tests
+#### Bootstrap is required to make UI Absolute up and running
+##### Using <b>index.html</b>:
 
-Run `ng test ui-absolute` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.X.X/css/bootstrap.min.css" rel="stylesheet">
+```
+#### or,
+#### Using <b>npm</b>:
 
-## Further help
+```
+    npm install bootstrap --save
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+#### Once npm command is executed, add following to <b>angular.json</b> of your project:
+
+```
+    "styles": [
+        "./node_modules/bootstrap/dist/css/bootstrap.css",
+        ...
+    ],
+    "scripts": [
+        ...
+        "./node_modules/bootstrap/dist/js/bootstrap.js"
+    ]
+```
+
+## Compatibility
+
+| ui-absolute |    Bootstrap   |  Angular  |
+| ----------- | -------------- | --------- |
+| 1.0.0       | 3.x.x or 4.x.x | 8.x.x     |
+
+
+### License
+
+[MIT](https://github.com/UI-Absolute/UIAbsolute/blob/development/LICENSE)
