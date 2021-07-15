@@ -1,5 +1,5 @@
 <div align="center">
-    <img class="logo" src="https://uiabsolute.com/assets/images/UI_Absolute_inline.png" style="height: 60px;">
+    <img class="logo" src="https://uiabsolute.com/assets/images/UI_Absolute_small.png" style="height: 60px;">
     <br>
     <a href="https://npmjs.org/ui-absolute">
         <img src="https://api.travis-ci.com/UI-Absolute/UIAbsolute.svg?branch=main">
