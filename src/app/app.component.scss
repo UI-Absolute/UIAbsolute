@@ -1,1 +1,93 @@
+.float-button{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#183153;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+    cursor: pointer;
+}
+
+.feedback-float{
+	margin-top:22px;
+}
+
+.feedback-modal {
+    position:fixed;
+	width:350px;
+	height:500px;
+	bottom:110px;
+	right:30px;
+	background-color: #efefef;
+    border-radius:10px;
+    border: 4px solid #183153;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.feedback-success {
+    margin-top: 50% !important;
+    text-align: center;
+}
+
+.feedback-card {
+    background-color:#183153;
+    color: #fff;
+}
+
+.rating {
+    margin-top: 12px;
+}
+
+.rate {
+    position: absolute;
+    right: 0px;
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+.feedback-button-area {
+    float: right;
+    margin-right: 10px;
+}
+
+.feedback-close {
+    font-size: 22px;
+    margin: 5px;
+    cursor:pointer;
+}
 

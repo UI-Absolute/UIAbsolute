@@ -1,1 +1,48 @@
 <router-outlet></router-outlet>
+<a (click)="openModal();" class="float-button" title="Give us feedback">
+    <i class="fas fa-comment-dots feedback-float"></i>
+</a>
+<div class="feedback-modal" *ngIf="isModalOpen">
+    <div class="float-right">
+        <i class="far fa-times-circle feedback-close" title="Close" (click)="openModal();"></i>
+    </div>
+    <br>
+    <div class="card p-2 m-2 feedback-card feedback-success" *ngIf="feedBackMessage" [innerHTML]="feedBackMessage"></div>
+    <div class="card p-2 m-2 feedback-card" *ngIf="!feedBackMessage">
+        <i>Let us know how we can improve?<br>(Provide feedback)</i>
+    </div>
+    <form [formGroup]="feedbackForm" *ngIf="!feedBackMessage">
+        <div class="card p-2 m-2">
+            <label class="rating">Rate UI Absolute:</label>
+            <div class="rate">
+                <input type="radio" id="star5" formControlName="rating" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" formControlName="rating" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" formControlName="rating" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" formControlName="rating" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" formControlName="rating" value="1" />
+                <label for="star1" title="text">1 star</label>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" formControlName="email"
+                    placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Feedback:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    formControlName="feedback"></textarea>
+            </div>
+        </div>
+        <div class="feedback-button-area">
+            <button class="btn btn-outline-primary">Clear</button>&nbsp;&nbsp;
+            <button class="btn btn-primary" (click)="submitFeedback()" [disabled]="feedbackForm.invalid">Send Feedback</button>
+        </div>
+    </form>
+    <br>
+    <br>
+    <div class="text-danger m-2" *ngIf="errorMessage">* {{errorMessage}} </div>
+</div>

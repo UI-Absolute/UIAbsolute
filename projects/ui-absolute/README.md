@@ -1,6 +1,7 @@
 <div align="center">
     <img class="logo" src="https://uiabsolute.com/assets/images/UI_Absolute_small.png" style="height: 60px;">
     <br>
+    <br>
     <a href="https://npmjs.org/ui-absolute">
         <img src="https://api.travis-ci.com/UI-Absolute/UIAbsolute.svg?branch=main">
     </a>
@@ -68,9 +69,9 @@
 
 | ui-absolute |    Bootstrap   |  Angular  |
 | ----------- | -------------- | --------- |
-| 1.0.0       | 3.x.x or 4.x.x | 8.x.x     |
+| 1.x.x       | 3.x.x or 4.x.x | 8.x.x     |
 
 
 ### License
 
-[MIT](https://github.com/UI-Absolute/UIAbsolute/blob/development/LICENSE)
+[MIT](https://github.com/UI-Absolute/UIAbsolute/blob/main/LICENSE)
