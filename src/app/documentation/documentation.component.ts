@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-documentation',
@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DocumentationComponent implements OnInit {
 
+  mobilePanelFlag: boolean;
+  flag: boolean;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onMobilePanel(event) {
+    this.mobilePanelFlag = event;
+    this.flag = event;
+  }
+
+  onSidePanel(event) {
+    this.mobilePanelFlag = event;
+    this.flag = event;
   }
 
 }

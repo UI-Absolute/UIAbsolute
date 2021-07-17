@@ -66,11 +66,11 @@
     content: '★ ';
 }
 .rate > input:checked ~ label {
-    color: #ffc700;    
+    color: #ffc700;
 }
 .rate:not(:checked) > label:hover,
 .rate:not(:checked) > label:hover ~ label {
-    color: #deb217;  
+    color: #deb217;
 }
 .rate > input:checked + label:hover,
 .rate > input:checked + label:hover ~ label,
@@ -89,5 +89,11 @@
     font-size: 22px;
     margin: 5px;
     cursor:pointer;
+}
+
+@media only screen and (max-width: 375px) {
+  .feedback-responsive{
+    display:none;
+  }
 }
 

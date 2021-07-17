@@ -19,12 +19,12 @@
     </div>
   </div> -->
   <div class='row'>
-    <div class='col-md-12 col-styling font-weight-bold link' [routerLink]="['/documentation']">
+    <div class='col-md-12 col-styling font-weight-bold link' (click)="closeSideNavigation()" [routerLink]="['/documentation']">
       <span>Documentation</span>
     </div>
   </div>
   <div class='row' *ngFor="let component of components | searchFilter:filterargs">
-    <div class='col-md-12 col-styling link' [routerLink]="component.navigationUrl" *ngIf="component.visibility">
+    <div class='col-md-12 col-styling link' (click)="closeSideNavigation()" [routerLink]="component.navigationUrl" *ngIf="component.visibility">
       <span>{{component.name}}</span>
     </div>
   </div>

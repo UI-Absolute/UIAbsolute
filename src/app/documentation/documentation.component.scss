@@ -15,3 +15,23 @@
   left:13%;
   top:57px;
 }
+
+.mobile-panel {
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  top: 57px;
+}
+
+@media only screen and (max-width: 856px) {
+  .side-panel{
+    display:none;
+  }
+  .router-area{
+    width:100%;
+    left:0px;
+  }
+}
+

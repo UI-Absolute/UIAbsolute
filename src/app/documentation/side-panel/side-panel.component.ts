@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-side-panel',
@@ -9,9 +10,13 @@ export class SidePanelComponent implements OnInit {
   components: { name: string; navigationUrl: string; visibility: boolean }[];
   filterargs: string;
 
+  @Output() closeSideNav: EventEmitter<boolean> = new EventEmitter();
+  version: string;
+
   constructor() { }
 
   ngOnInit() {
+    this.version = environment.appVersion;
     this.filterargs = '';
     this.components = [{
       name: 'File Uploader',
@@ -98,6 +103,10 @@ export class SidePanelComponent implements OnInit {
       visibility: false
     }];
     this.components.sort((a, b) => a.name.localeCompare(b.name));
+  }
+
+  closeSideNavigation() {
+    this.closeSideNav.emit(false);
   }
 
 }

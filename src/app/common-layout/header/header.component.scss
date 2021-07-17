@@ -29,3 +29,24 @@
 .col-height {
   height: inherit;
 }
+.sidenav-menu{
+  display:none;
+}
+.sidenav-style{
+  position: absolute;
+  color: #fff;
+  right: 0px;
+  margin: 0.5rem;
+  font-size: 22px;
+  margin-right: 0.7rem;
+}
+
+@media only screen and (max-width: 856px) {
+  .header-responsive{
+    display:none;
+  }
+  .sidenav-menu{
+    display:block;
+  }
+}
+

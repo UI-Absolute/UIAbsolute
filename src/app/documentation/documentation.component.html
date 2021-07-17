@@ -1,10 +1,15 @@
 <div class="header-area">
-  <app-header></app-header>
+  <app-header
+    [mobileHumburger]="flag"
+    (mobilePanel)="onMobilePanel($event);"></app-header>
+</div>
+<div class="mobile-panel" *ngIf="mobilePanelFlag">
+  <app-side-panel
+    (closeSideNav)="onSidePanel($event);"></app-side-panel>
 </div>
 <div class="side-panel">
   <app-side-panel></app-side-panel>
 </div>
-<div class="router-area">
+<div class="router-area" *ngIf="!mobilePanelFlag">
   <router-outlet></router-outlet>
 </div>
-
