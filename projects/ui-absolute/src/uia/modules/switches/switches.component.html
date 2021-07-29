@@ -1,6 +1,6 @@
 <div class=d-inline-block>
   <div class="switch-checkbox" [ngClass]="[switchSettings.color, switchSettings.size]">
-    <input type="checkbox" name="switch1" id="switch1" [checked]="checked" [disabled]="disabled">
-    <label for="switch1"></label>
+    <input type="checkbox" [name]="'switch'+index" [id]="'switch'+index" [checked]="checked" [disabled]="disabled">
+    <label [for]="'switch'+index"></label>
   </div>
 </div>

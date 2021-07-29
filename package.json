@@ -1,13 +1,14 @@
 {
   "name": "UIAbsolute",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "lib": "ng build ui-absolute",
     "prebuild": "npm --no-git-tag-version version patch",
     "build": "ng build --prod --base-href ./",
-    "build-lib": "ng build ui-absolute",
+    "build:scss": "scss-bundle -p scss-bundle.config.json",
+    "build-lib": "ng build ui-absolute && npm run build:scss",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -44,6 +45,7 @@
     "jquery": "^3.6.0",
     "jquery-ui": "^1.12.1",
     "rxjs": "~6.4.0",
+    "scss-bundle": "^3.1.2",
     "tslib": "^1.14.1",
     "zone.js": "~0.9.1"
   },

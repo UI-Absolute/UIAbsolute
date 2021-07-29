@@ -85,7 +85,7 @@ export class SidePanelComponent implements OnInit {
     {
       name: 'Switches',
       navigationUrl: '/documentation/switches',
-      visibility: false
+      visibility: true
     },
     {
       name: 'Collapse',

@@ -58,4 +58,12 @@ export const DEMO_CODE = [{
         ...
         "./node_modules/bootstrap/dist/js/bootstrap.js"
     ]
+  `},
+  {
+    id: 6,
+    name: '',
+    type: 'usage',
+    htmlCode: ``,
+    componentCode: `
+    @import '~ui-absolute/base';
   `}]

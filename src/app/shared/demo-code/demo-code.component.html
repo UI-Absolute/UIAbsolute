@@ -1,20 +1,39 @@
 <div *ngIf="demoCode && demoCode.type === 'usage'">
+  <button class="btn btn-light copy-clipboard" (click)="copyCode(codeToCopyUsage)" title="Copy code to clipboard" value="Copy code to clipboard" >
+    <i class="far fa-copy"></i>
+  </button>
   <div class="highlight">
-    <pre class="mb-0"><div [innerHTML]="demoCode.componentCode"></div></pre>
+    <pre class="mb-0"><div [innerHTML]="demoCode.componentCode" #codeToCopyUsage></div></pre>
   </div>
 </div>
 
 <div *ngIf="demoCode && demoCode.type === 'code'">
   <nav class="nav-header">
     <div class="nav nav-tabs" id="nav-tab3" role="tablist">
-      <a class="nav-link active" id="nav-html3-tab" data-toggle="tab" [href]="'#'+demoCode.name+demoCode.id" role="tab"
+      <a class="nav-link active" id="nav-html3-tab" data-toggle="tab" [href]="'#'+demoCode.name+demoCode.id" (click)="previewSelected('template')" role="tab"
         aria-controls="nav-html3" aria-selected="true">template</a>
-      <a class="nav-link" id="nav-component3-tab" data-toggle="tab" [href]="'#tab-'+demoCode.name+demoCode.id" role="tab"
+      <a class="nav-link" id="nav-component3-tab" data-toggle="tab" [href]="'#tab-'+demoCode.name+demoCode.id" (click)="previewSelected('component')" role="tab"
         aria-controls="nav-component3" aria-selected="false">component</a>
     </div>
   </nav>
+  <button
+    class="btn btn-light copy-clipboard"
+    (click)="copyCode(codeToCopyTemplate)"
+    title="Copy code to clipboard"
+    value="Copy code to clipboard"
+    *ngIf="previewOpen === 'template'">
+      <i class="far fa-copy"></i>
+  </button>
+  <button
+    class="btn btn-light copy-clipboard"
+    (click)="copyCode(codeToCopyComponent)"
+    title="Copy code to clipboard"
+    value="Copy code to clipboard"
+    *ngIf="previewOpen === 'component'">
+      <i class="far fa-copy"></i>
+  </button>
   <div class="highlight">
-    <pre><div class="tab-content" id="nav-tabContent3"><div class="tab-pane fade show active" [id]="demoCode.name+demoCode.id" role="tabpanel" aria-labelledby="nav-html3-tab" [innerHTML]="demoCode.htmlCode">
-  </div><div class="tab-pane fade" [id]="'tab-'+demoCode.name+demoCode.id" role="tabpanel" aria-labelledby="nav-component3-tab" [innerHTML]="demoCode.componentCode"></div></div></pre>
+    <pre><div class="tab-content" id="nav-tabContent3"><div class="tab-pane fade show active" [id]="demoCode.name+demoCode.id" role="tabpanel" aria-labelledby="nav-html3-tab" [innerHTML]="demoCode.htmlCode" #codeToCopyTemplate>
+  </div><div class="tab-pane fade" [id]="'tab-'+demoCode.name+demoCode.id" role="tabpanel" aria-labelledby="nav-component3-tab" [innerHTML]="demoCode.componentCode" #codeToCopyComponent></div></div></pre>
   </div>
 </div>

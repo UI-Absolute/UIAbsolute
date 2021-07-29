@@ -33,6 +33,12 @@
     })
 ```
 
+#### Import following to your project style.scss file:
+
+```
+   @import '~ui-absolute/base';
+```
+
 #### Add desired component to <b>HTML</b> page:
 
 ```
