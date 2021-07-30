@@ -1,0 +1,6 @@
+{
+    "bundlerOptions": {
+        "entryFile": "./projects/ui-absolute/src/uia/scss/_style.scss",
+        "outFile":"./dist/ui-absolute/_base.scss"
+    }
+}
