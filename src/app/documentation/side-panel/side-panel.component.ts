@@ -75,12 +75,12 @@ export class SidePanelComponent implements OnInit {
     {
       name: 'Checkbox',
       navigationUrl: '/documentation/checkbox',
-      visibility: false
+      visibility: true
     },
     {
-      name: 'Radio Button',
+      name: 'Radio',
       navigationUrl: '/documentation/radio',
-      visibility: false
+      visibility: true
     },
     {
       name: 'Switches',

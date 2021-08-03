@@ -3,12 +3,12 @@
     <div class="col-md-10">
       <div class="row">
         <div class="col-md-12">
-          <h1>Radio Button</h1>
+          <h1>Radio</h1>
         </div>
       </div>
       <div class="row">
         <div class='col-md-12'>
-          <span>Examples and Documentations for Radio Button.</span>
+          <span>Examples and Documentations for Radio.</span>
         </div>
       </div>
       <div class="row">
@@ -17,7 +17,69 @@
           <app-demo-code [demoCode]="demoCode[0]"></app-demo-code>
         </div>
       </div>
-
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="dc-header" id="example">Example</h2>
+          <h3 class="dc-sub-header" id="basic">Basic</h3>
+          <div class="demo-preview border">
+            <uia-radio [settings]="settings" [checked]="true" [name]="'groupA'" [label]="'Option 1'" [id]="'option1'"></uia-radio>
+          </div>
+          <app-demo-code [demoCode]="demoCode[1]"></app-demo-code>
+          <h3 class="dc-sub-header" id="colors">Colors</h3>
+          <div class="demo-preview border">
+            <uia-radio [settings]="primarySettings" class="mr-2" [checked]="true" [label]="'Option 1'" [id]="'option9'" [name]="'groupB'"></uia-radio>
+            <uia-radio [settings]="secondarySettings" class="mr-2"  [label]="'Option 2'" [id]="'option2'" [name]="'groupB'"></uia-radio>
+            <uia-radio [settings]="warningSettings" class="mr-2"  [label]="'Option 3'" [id]="'option3'" [name]="'groupB'"></uia-radio>
+            <uia-radio [settings]="successSettings" class="mr-2"  [label]="'Option 4'" [id]="'option4'" [name]="'groupB'"></uia-radio>
+            <uia-radio [settings]="dangerSettings" class="mr-2" [label]="'Option 5'" [id]="'option5'" [name]="'groupB'"></uia-radio>
+            <uia-radio [settings]="infoSettings" class="mr-2" [label]="'Option 6'" [id]="'option6'" [name]="'groupB'"></uia-radio>
+            <uia-radio [settings]="lightSettings" class="mr-2" [label]="'Option 7'" [id]="'option7'" [name]="'groupB'"></uia-radio>
+            <uia-radio [settings]="darkSettings" class="mr-2" [label]="'Option 8'" [id]="'option8'" [name]="'groupB'"></uia-radio>
+          </div>
+          <app-demo-code [demoCode]="demoCode[2]"></app-demo-code>
+          <h3 class="dc-sub-header" id="alignment">Alignment</h3>
+          <span>By default alignment is Horizontal, to show it in vertical add <b>align</b> property to settings</span>
+          <div class="demo-preview border">
+            <uia-radio [settings]="primaryVerticalSettings" class="mr-2" [checked]="true" [label]="'Option 1'" [id]="'option10'" [name]="'groupC'"></uia-radio>
+            <uia-radio [settings]="secondaryVerticalSettings" class="mr-2"  [label]="'Option 2'" [id]="'option11'" [name]="'groupC'"></uia-radio>
+            <uia-radio [settings]="warningVerticalSettings" class="mr-2"  [label]="'Option 3'" [id]="'option12'" [name]="'groupC'"></uia-radio>
+            <uia-radio [settings]="successVerticalSettings" class="mr-2"  [label]="'Option 4'" [id]="'option13'" [name]="'groupC'"></uia-radio>
+            <uia-radio [settings]="dangerVerticalSettings" class="mr-2" [label]="'Option 5'" [id]="'option14'" [name]="'groupC'"></uia-radio>
+            <uia-radio [settings]="infoVerticalSettings" class="mr-2" [label]="'Option 6'" [id]="'option15'" [name]="'groupC'"></uia-radio>
+            <uia-radio [settings]="lightVerticalSettings" class="mr-2" [label]="'Option 7'" [id]="'option16'" [name]="'groupC'"></uia-radio>
+            <uia-radio [settings]="darkVerticalSettings" class="mr-2" [label]="'Option 8'" [id]="'option17'" [name]="'groupC'"></uia-radio>
+          </div>
+          <app-demo-code [demoCode]="demoCode[3]"></app-demo-code>
+          <h3 class="dc-sub-header" id="label">Label</h3>
+          <div class="demo-preview border">
+            <uia-radio [settings]="settings" [checked]="true" [name]="'groupD'" [label]="'Option 1'" [id]="'option18'"></uia-radio>
+          </div>
+          <app-demo-code [demoCode]="demoCode[4]"></app-demo-code>
+          <h3 class="dc-sub-header" id="labelWithIcon">Label with icon</h3>
+          <div class="demo-preview border">
+            <uia-radio [settings]="settings" class="mr-2" [checked]="true" [label]="icon" [id]="'option19'" [name]="'groupE'"></uia-radio>
+            <uia-radio [settings]="settings" class="mr-2" [label]="icon2" [id]="'option20'" [name]="'groupE'"></uia-radio>
+          </div>
+          <app-demo-code [demoCode]="demoCode[5]"></app-demo-code>
+          <h3 class="dc-sub-header" id="checked">Checked</h3>
+          <div class="demo-preview border d-flex">
+            <div class='text-center mr-3' style="display:grid;">
+              <uia-radio [settings]="primarySettings" class="mr-2" [checked]="true" [label]="'Option 1'" [id]="'option21'" [name]="'groupF'"></uia-radio>
+              <span>I am checked</span>
+            </div>
+            <div class='text-center mr-3' style="display:grid;">
+              <uia-radio [settings]="primarySettings" class="mr-2" [checked]="false" [label]="'Option 2'" [id]="'option22'" [name]="'groupF'"></uia-radio>
+              <span>I am unchecked</span>
+            </div>
+          </div>
+          <app-demo-code [demoCode]="demoCode[6]"></app-demo-code>
+          <h3 class="dc-sub-header" id="disabled">Disabled</h3>
+          <div class="demo-preview border">
+            <uia-radio [settings]="settings" [disabled]="true" [label]="'Option 1'" [id]="'option23'" [name]="'groupG'"></uia-radio>
+          </div>
+          <app-demo-code [demoCode]="demoCode[7]"></app-demo-code>
+        </div>
+      </div>
     </div>
     <div class="col-md-2">
       <app-page-nav [navStructure]="pageNav"></app-page-nav>

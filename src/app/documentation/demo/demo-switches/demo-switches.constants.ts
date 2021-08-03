@@ -35,7 +35,7 @@ export const DEMO_CODE = [{
   name: 'Basic',
   type: 'code',
   htmlCode: `
-  &lt;uia-switch [settings]="settings"&gt;&lt;/uia-switch&gt;`,
+  &lt;uia-switch [settings]="settings" [id]="'option1'"&gt;&lt;/uia-switch&gt;`,
   componentCode: `
   this.settings = {
     color: UIA_THEME.PRIMARY,
@@ -47,14 +47,14 @@ export const DEMO_CODE = [{
   name: 'Colors',
   type: 'code',
   htmlCode: `
-  &lt;uia-switch [settings]="primarySettings"&gt;&lt;/uia-switch&gt;
-  &lt;uia-switch [settings]="secondarySettings"&gt;&lt;/uia-switch&gt;
-  &lt;uia-switch [settings]="warningSettings"&gt;&lt;/uia-switch&gt;
-  &lt;uia-switch [settings]="successSettings"&gt;&lt;/uia-switch&gt;
-  &lt;uia-switch [settings]="dangerSettings"&gt;&lt;/uia-switch&gt;
-  &lt;uia-switch [settings]="infoSettings"&gt;&lt;/uia-switch&gt;
-  &lt;uia-switch [settings]="lightSettings"&gt;&lt;/uia-switch&gt;
-  &lt;uia-switch [settings]="darkSettings"&gt;&lt;/uia-switch&gt;`,
+  &lt;uia-switch [settings]="primarySettings" [id]="'option2'"&gt;&lt;/uia-switch&gt;
+  &lt;uia-switch [settings]="secondarySettings" [id]="'option3'"&gt;&lt;/uia-switch&gt;
+  &lt;uia-switch [settings]="warningSettings" [id]="'option4'"&gt;&lt;/uia-switch&gt;
+  &lt;uia-switch [settings]="successSettings" [id]="'option5'"&gt;&lt;/uia-switch&gt;
+  &lt;uia-switch [settings]="dangerSettings" [id]="'option6'"&gt;&lt;/uia-switch&gt;
+  &lt;uia-switch [settings]="infoSettings" [id]="'option7'"&gt;&lt;/uia-switch&gt;
+  &lt;uia-switch [settings]="lightSettings" [id]="'option8'"&gt;&lt;/uia-switch&gt;
+  &lt;uia-switch [settings]="darkSettings" [id]="'option9'"&gt;&lt;/uia-switch&gt;`,
   componentCode: `
   // For showing switch in primary color
   this.primarySettings = {
@@ -109,8 +109,8 @@ export const DEMO_CODE = [{
   name: 'Size',
   type: 'code',
   htmlCode: `
-  &lt;uia-switch [settings]="defaultSwitchsettings"&gt;&lt;/uia-switch&gt;
-  &lt;uia-switch [settings]="largeSwitchSettings"&gt;&lt;/uia-switch&gt;`,
+  &lt;uia-switch [settings]="defaultSwitchsettings" [id]="'option10'"&gt;&lt;/uia-switch&gt;
+  &lt;uia-switch [settings]="largeSwitchSettings" [id]="'option11'"&gt;&lt;/uia-switch&gt;`,
   componentCode: `
   // For showing switch of default size
   this.defaultSwitchSettings = {
@@ -129,8 +129,8 @@ export const DEMO_CODE = [{
   name: 'Checked',
   type: 'code',
   htmlCode: `
-  &lt;uia-switch [settings]="settings" [checked]="true"&gt;&lt;/uia-switch&gt;
-  &lt;uia-switch [settings]="settings" [checked]="false"&gt;&lt;/uia-switch&gt;`,
+  &lt;uia-switch [settings]="settings" [checked]="true" [id]="'option12'"&gt;&lt;/uia-switch&gt;
+  &lt;uia-switch [settings]="settings" [checked]="false" [id]="'option13'"&gt;&lt;/uia-switch&gt;`,
   componentCode: `
   this.settings = {
     color: UIA_THEME.PRIMARY,
@@ -147,7 +147,7 @@ export const DEMO_CODE = [{
   name: 'disabled',
   type: 'code',
   htmlCode: `
-  &lt;uia-switch [settings]="settings" [disabled]="true"&gt;&lt;/uia-switch&gt;`,
+  &lt;uia-switch [settings]="settings" [disabled]="true" [id]="'option14'"&gt;&lt;/uia-switch&gt;`,
   componentCode: `
   this.settings = {
     color: UIA_THEME.PRIMARY,

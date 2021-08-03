@@ -11,7 +11,9 @@ export class SwitchesComponent implements OnInit {
   @Input() settings: SwitchesConfig;
   @Input() checked: boolean;
   @Input() disabled: boolean;
-  index: number | string;
+  @Input() name: string;
+  @Input() id: string;
+  @Input() for: string;
 
   switchSettings = {
     color: 'switch-success',
@@ -59,7 +61,6 @@ export class SwitchesComponent implements OnInit {
         default:
           this.switchSettings.size = 'switch-sm';
     }
-    this.index = settings.id ? settings.id : ''
   }
 
 }

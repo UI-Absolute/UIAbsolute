@@ -9,6 +9,12 @@ import { RadioConfig, RADIO_ALIGN, UIA_THEME } from '../../../models';
 export class RadioComponent implements OnInit {
 
   @Input() settings: RadioConfig;
+  @Input() checked: boolean;
+  @Input() disabled: boolean;
+  @Input() label: string;
+  @Input() id: string;
+  @Input() name: string;
+  @Input() for: string;
 
   radioSettings = {
     color: '',
@@ -52,11 +58,11 @@ export class RadioComponent implements OnInit {
     }
 
     switch (settings.align) {
-      case RADIO_ALIGN.HORIZONTAL:
-        this.radioSettings.align = 'radio-inline';
+      case RADIO_ALIGN.VERTICAL:
+        this.radioSettings.align = 'd-block';
         break;
       default:
-        this.radioSettings.align = '';
+        this.radioSettings.align = 'd-inline-block';
     }
   }
 

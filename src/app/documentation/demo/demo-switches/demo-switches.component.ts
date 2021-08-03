@@ -36,73 +36,59 @@ export class DemoSwitchesComponent implements OnInit {
 
     this.settings = {
       color: UIA_THEME.PRIMARY,
-      size: SWITCHES_SIZE.DEFAULT,
-      id: 0
+      size: SWITCHES_SIZE.DEFAULT
     };
     this.settings1 = {
       color: UIA_THEME.PRIMARY,
-      size: SWITCHES_SIZE.DEFAULT,
-      id: 9
+      size: SWITCHES_SIZE.DEFAULT
     };
     this.settings2 = {
       color: UIA_THEME.PRIMARY,
-      size: SWITCHES_SIZE.DEFAULT,
-      id: 10
+      size: SWITCHES_SIZE.DEFAULT
     };
     this.settings3 = {
       color: UIA_THEME.PRIMARY,
-      size: SWITCHES_SIZE.DEFAULT,
-      id: 11
+      size: SWITCHES_SIZE.DEFAULT
     };
     this.settings4 = {
       color: UIA_THEME.PRIMARY,
-      size: SWITCHES_SIZE.DEFAULT,
-      id: 12
+      size: SWITCHES_SIZE.DEFAULT
     };
     this.settings5 = {
       color: UIA_THEME.PRIMARY,
-      size: SWITCHES_SIZE.DEFAULT,
-      id: 13
+      size: SWITCHES_SIZE.DEFAULT
     };
     this.secondarySettings = {
       color: UIA_THEME.SECONDARY,
-      size: SWITCHES_SIZE.DEFAULT,
-      id: 1
+      size: SWITCHES_SIZE.DEFAULT
     };
     this.warningSettings = {
       color: UIA_THEME.WARNING,
-      size: SWITCHES_SIZE.DEFAULT,
-      id: 2
+      size: SWITCHES_SIZE.DEFAULT
     };
     this.successSettings = {
       color: UIA_THEME.SUCCESS,
-      size: SWITCHES_SIZE.DEFAULT,
-      id: 3
+      size: SWITCHES_SIZE.DEFAULT
     };
     this.dangerSettings = {
       color: UIA_THEME.DANGER,
-      size: SWITCHES_SIZE.DEFAULT,
-      id: 4
+      size: SWITCHES_SIZE.DEFAULT
     };
     this.infoSettings = {
       color: UIA_THEME.INFO,
-      size: SWITCHES_SIZE.DEFAULT,
-      id: 5
+      size: SWITCHES_SIZE.DEFAULT
     };
     this.lightSettings = {
       color: UIA_THEME.LIGHT,
-      size: SWITCHES_SIZE.DEFAULT,
-      id: 6
+      size: SWITCHES_SIZE.DEFAULT
     };
     this.darkSettings = {
       color: UIA_THEME.DARK,
-      size: SWITCHES_SIZE.DEFAULT,
-      id: 7
+      size: SWITCHES_SIZE.DEFAULT
     };
     this.largeSwitchSettings = {
       color: UIA_THEME.PRIMARY,
-      size: SWITCHES_SIZE.LARGE,
-      id: 8
+      size: SWITCHES_SIZE.LARGE
     };
   }
 

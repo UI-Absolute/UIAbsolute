@@ -17,7 +17,69 @@
           <app-demo-code [demoCode]="demoCode[0]"></app-demo-code>
         </div>
       </div>
-
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="dc-header" id="example">Example</h2>
+          <h3 class="dc-sub-header" id="basic">Basic</h3>
+          <div class="demo-preview border">
+            <uia-checkbox [settings]="settings" [checked]="true" [label]="'Option 1'" [id]="'option9'"></uia-checkbox>
+          </div>
+          <app-demo-code [demoCode]="demoCode[1]"></app-demo-code>
+          <h3 class="dc-sub-header" id="colors">Colors</h3>
+          <div class="demo-preview border">
+            <uia-checkbox [settings]="primarySettings" class="mr-2" [checked]="true" [label]="''" [id]="'option1'"></uia-checkbox>
+            <uia-checkbox [settings]="secondarySettings" [checked]="true" [label]="'Option 2'" class="mr-2" [id]="'option2'"></uia-checkbox>
+            <uia-checkbox [settings]="warningSettings" [checked]="true" [label]="'Option 3'" class="mr-2" [id]="'option3'"></uia-checkbox>
+            <uia-checkbox [settings]="successSettings" [checked]="true" [label]="'Option 4'" class="mr-2" [id]="'option4'"></uia-checkbox>
+            <uia-checkbox [settings]="dangerSettings" [checked]="true" [label]="'Option 5'" class="mr-2" [id]="'option5'"></uia-checkbox>
+            <uia-checkbox [settings]="infoSettings" [checked]="true" [label]="'Option 6'" class="mr-2" [id]="'option6'"></uia-checkbox>
+            <uia-checkbox [settings]="lightSettings" [checked]="true" [label]="'Option 7'" class="mr-2" [id]="'option7'"></uia-checkbox>
+            <uia-checkbox [settings]="darkSettings" [checked]="true" [label]="'Option 8'" class="mr-2" [id]="'option8'"></uia-checkbox>
+          </div>
+          <app-demo-code [demoCode]="demoCode[2]"></app-demo-code>
+          <h3 class="dc-sub-header" id="alignment">Alignment</h3>
+          <span>By default alignment is Horizontal, to show it in vertical add <b>align</b> property to settings</span>
+          <div class="demo-preview border">
+            <uia-checkbox [settings]="primaryVerticalSettings" class="mr-2" [checked]="true" [label]="'Option 1'" [id]="'option10'"></uia-checkbox>
+            <uia-checkbox [settings]="secondaryVerticalSettings" [checked]="true" [label]="'Option 2'" class="mr-2" [id]="'option11'"></uia-checkbox>
+            <uia-checkbox [settings]="warningVerticalSettings" [checked]="true" [label]="'Option 3'" class="mr-2" [id]="'option12'"></uia-checkbox>
+            <uia-checkbox [settings]="successVerticalSettings" [checked]="true" [label]="'Option 4'" class="mr-2" [id]="'option13'"></uia-checkbox>
+            <uia-checkbox [settings]="dangerVerticalSettings" [checked]="true" [label]="'Option 5'" class="mr-2" [id]="'option14'"></uia-checkbox>
+            <uia-checkbox [settings]="infoVerticalSettings" [checked]="true" [label]="'Option 6'" class="mr-2" [id]="'option15'"></uia-checkbox>
+            <uia-checkbox [settings]="lightVerticalSettings" [checked]="true" [label]="'Option 7'" class="mr-2" [id]="'option16'"></uia-checkbox>
+            <uia-checkbox [settings]="darkVerticalSettings" [checked]="true" [label]="'Option 8'" class="mr-2" [id]="'option17'"></uia-checkbox>
+          </div>
+          <app-demo-code [demoCode]="demoCode[3]"></app-demo-code>
+          <h3 class="dc-sub-header" id="label">Label</h3>
+          <div class="demo-preview border">
+            <uia-checkbox [settings]="settings" class="mr-2" [checked]="true" [label]="'Option 1'" [id]="'option18'"></uia-checkbox>
+          </div>
+          <app-demo-code [demoCode]="demoCode[4]"></app-demo-code>
+          <h3 class="dc-sub-header" id="labelWithIcon">Label with icon</h3>
+          <div class="demo-preview border">
+            <uia-checkbox [settings]="settings" class="mr-2" [checked]="true" [label]="icon" [id]="'option22'"></uia-checkbox>
+            <uia-checkbox [settings]="settings" class="mr-2" [checked]="true" [label]="icon2" [id]="'option23'"></uia-checkbox>
+          </div>
+          <app-demo-code [demoCode]="demoCode[7]"></app-demo-code>
+          <h3 class="dc-sub-header" id="checked">Checked</h3>
+          <div class="demo-preview border d-flex">
+            <div class='text-center mr-3' style="display:grid;">
+              <uia-checkbox [settings]="primarySettings" class="mr-2" [checked]="true" [label]="'Option 1'" [id]="'option19'"></uia-checkbox>
+              <span>I am checked</span>
+            </div>
+            <div class='text-center mr-3' style="display:grid;">
+              <uia-checkbox [settings]="primarySettings" class="mr-2" [checked]="false" [label]="'Option 2'" [id]="'option20'"></uia-checkbox>
+              <span>I am unchecked</span>
+            </div>
+          </div>
+          <app-demo-code [demoCode]="demoCode[5]"></app-demo-code>
+          <h3 class="dc-sub-header" id="disabled">Disabled</h3>
+          <div class="demo-preview border">
+            <uia-checkbox [settings]="settings" [disabled]="true" [label]="'option 1'" [id]="'option21'"></uia-checkbox>
+          </div>
+          <app-demo-code [demoCode]="demoCode[6]"></app-demo-code>
+        </div>
+      </div>
     </div>
     <div class="col-md-2">
       <app-page-nav [navStructure]="pageNav"></app-page-nav>

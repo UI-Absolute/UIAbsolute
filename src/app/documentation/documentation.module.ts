@@ -23,7 +23,7 @@ import {
   UIAButtonsModule,
   UIATooltipModule,
   UIACheckboxModule,
-  UIARadioModule } from 'ui-absolute';
+  UIARadioModule } from 'projects/ui-absolute/src/public-api';
 
 @NgModule({
   declarations: [

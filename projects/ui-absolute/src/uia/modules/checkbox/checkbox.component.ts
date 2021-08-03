@@ -9,6 +9,12 @@ import { CheckboxConfig, CHECKBOX_ALIGN, UIA_THEME } from '../../../models';
 export class CheckboxComponent implements OnInit {
 
   @Input() settings: CheckboxConfig;
+  @Input() checked: boolean;
+  @Input() disabled: boolean;
+  @Input() label: string;
+  @Input() id: string;
+  @Input() name: string;
+  @Input() for: string;
 
   checkboxSettings = {
     color: '',
@@ -52,11 +58,11 @@ export class CheckboxComponent implements OnInit {
     }
 
     switch (settings.align) {
-      case CHECKBOX_ALIGN.HORIZONTAL:
-        this.checkboxSettings.align = 'checkbox-inline';
+      case CHECKBOX_ALIGN.VERTICAL:
+        this.checkboxSettings.align = 'd-block';
         break;
       default:
-        this.checkboxSettings.align = '';
+        this.checkboxSettings.align = 'd-inline-block';
     }
   }
 

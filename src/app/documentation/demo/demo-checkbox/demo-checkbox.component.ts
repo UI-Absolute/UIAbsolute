@@ -10,6 +10,7 @@ import { DEMO_CODE, PAGE_NAV } from './demo-checkbox.constants';
 export class DemoCheckboxComponent implements OnInit {
 
   settings: CheckboxConfig;
+  primarySettings: CheckboxConfig;
   secondarySettings: CheckboxConfig;
   warningSettings: CheckboxConfig;
   successSettings: CheckboxConfig;
@@ -17,10 +18,21 @@ export class DemoCheckboxComponent implements OnInit {
   infoSettings: CheckboxConfig;
   lightSettings: CheckboxConfig;
   darkSettings: CheckboxConfig;
+  primaryVerticalSettings: CheckboxConfig;
+  secondaryVerticalSettings: CheckboxConfig;
+  warningVerticalSettings: CheckboxConfig;
+  successVerticalSettings: CheckboxConfig;
+  dangerVerticalSettings: CheckboxConfig;
+  infoVerticalSettings: CheckboxConfig;
+  lightVerticalSettings: CheckboxConfig;
+  darkVerticalSettings: CheckboxConfig;
   horizontalCheckboxSettings: CheckboxConfig;
 
   pageNav;
   demoCode;
+  icon: string;
+  icon2: string;
+  
 
   constructor() { }
 
@@ -32,6 +44,10 @@ export class DemoCheckboxComponent implements OnInit {
     this.settings = {
       color: UIA_THEME.PRIMARY
     };
+
+    this.primarySettings = {
+      color: UIA_THEME.PRIMARY
+    }
 
     this.secondarySettings = {
       color: UIA_THEME.SECONDARY
@@ -54,10 +70,43 @@ export class DemoCheckboxComponent implements OnInit {
     this.darkSettings = {
       color: UIA_THEME.DARK
     };
-    this.horizontalCheckboxSettings = {
-      color: UIA_THEME.SUCCESS,
-      align: CHECKBOX_ALIGN.HORIZONTAL
+
+    this.primaryVerticalSettings = {
+      color: UIA_THEME.PRIMARY,
+      align: CHECKBOX_ALIGN.VERTICAL
     };
+    this.secondaryVerticalSettings = {
+      color: UIA_THEME.SECONDARY,
+      align: CHECKBOX_ALIGN.VERTICAL
+    };
+    this.warningVerticalSettings = {
+      color: UIA_THEME.WARNING,
+      align: CHECKBOX_ALIGN.VERTICAL
+    };
+    this.successVerticalSettings = {
+      color: UIA_THEME.SUCCESS,
+      align: CHECKBOX_ALIGN.VERTICAL
+    };
+    this.dangerVerticalSettings = {
+      color: UIA_THEME.DANGER,
+      align: CHECKBOX_ALIGN.VERTICAL
+    };
+    this.infoVerticalSettings = {
+      color: UIA_THEME.INFO,
+      align: CHECKBOX_ALIGN.VERTICAL
+    };
+    this.lightVerticalSettings = {
+      color: UIA_THEME.LIGHT,
+      align: CHECKBOX_ALIGN.VERTICAL
+    };
+    this.darkVerticalSettings = {
+      color: UIA_THEME.DARK,
+      align: CHECKBOX_ALIGN.VERTICAL
+    };
+
+    this.icon = "<i class='far fa-credit-card'></i> Cards Accepted"
+
+    this.icon2 = "<i class='far fa-money-bill-alt'></i> Cash Accepted"
 
   }
 

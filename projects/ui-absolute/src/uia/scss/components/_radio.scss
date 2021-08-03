@@ -1,5 +1,5 @@
 .radio {
-	padding: 7px 0;
+	padding: 0;
     min-height: auto;
 
 	input[type=radio] {
@@ -35,6 +35,9 @@
 				&:before {
 					content: "\25C9";
 					color: #0f9aee;
+					border-width: 0px;
+					padding-top: 2px;
+					font-size: 30px;
 				}
 			}
 		}
@@ -47,7 +50,10 @@
 				+label {
 					&:before {
 						content: "\25C9";
-						color: #7774e7;
+						color: #007bff;
+						border-width: 0px;
+						padding-top: 2px;
+    					font-size: 30px;
 					}
 				}
 			}
@@ -62,6 +68,9 @@
 					&:before {
 						content: "\25C9";
 						color: #37c936;
+						border-width: 0px;
+						padding-top: 2px;
+    					font-size: 30px;
 					}
 				}
 			}
@@ -76,6 +85,9 @@
 					&:before {
 						content: "\25C9";
 						color: #ffcc00;
+						border-width: 0px;
+						padding-top: 2px;
+    					font-size: 30px;
 					}
 				}
 			}
@@ -90,6 +102,9 @@
 					&:before {
 						content: "\25C9";
 						color: #ff3c7e;
+						border-width: 0px;
+						padding-top: 2px;
+    					font-size: 30px;
 					}
 				}
 			}
@@ -103,7 +118,10 @@
 				+label {
 					&:before {
 						content: "\25C9";
-						color: #ff3c7e;
+						color: #6c757d;
+						border-width: 0px;
+						padding-top: 2px;
+    					font-size: 30px;
 					}
 				}
 			}
@@ -118,6 +136,9 @@
 					&:before {
 						content: "\25C9";
 						color: #f8f9fa;
+						border-width: 0px;
+						padding-top: 2px;
+    					font-size: 30px;
 					}
 				}
 			}
@@ -132,6 +153,9 @@
 					&:before {
 						content: "\25C9";
 						color: #343a40;
+						border-width: 0px;
+						padding-top: 2px;
+    					font-size: 30px;
 					}
 				}
 			}
@@ -146,6 +170,9 @@
 					&:before {
 						content: "\25C9";
 						color: #17a2b8;
+						border-width: 0px;
+						padding-top: 2px;
+    					font-size: 30px;
 					}
 				}
 			}

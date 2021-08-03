@@ -10,6 +10,7 @@ import { DEMO_CODE, PAGE_NAV } from './demo-radio.constants';
 export class DemoRadioComponent implements OnInit {
 
   settings: RadioConfig;
+  primarySettings: RadioConfig;
   secondarySettings: RadioConfig;
   warningSettings: RadioConfig;
   successSettings: RadioConfig;
@@ -17,10 +18,19 @@ export class DemoRadioComponent implements OnInit {
   infoSettings: RadioConfig;
   lightSettings: RadioConfig;
   darkSettings: RadioConfig;
-  horizontalRadioSettings: RadioConfig;
+  primaryVerticalSettings: RadioConfig;
+  secondaryVerticalSettings: RadioConfig;
+  warningVerticalSettings: RadioConfig;
+  successVerticalSettings: RadioConfig;
+  dangerVerticalSettings: RadioConfig ;
+  infoVerticalSettings: RadioConfig;
+  lightVerticalSettings: RadioConfig;
+  darkVerticalSettings: RadioConfig;
 
   pageNav;
   demoCode;
+  icon: string;
+  icon2: string;
 
   constructor() { }
 
@@ -30,6 +40,10 @@ export class DemoRadioComponent implements OnInit {
   this.demoCode = DEMO_CODE;
 
   this.settings = {
+    color: UIA_THEME.PRIMARY
+  };
+
+  this.primarySettings = {
     color: UIA_THEME.PRIMARY
   };
 
@@ -54,11 +68,42 @@ export class DemoRadioComponent implements OnInit {
   this.darkSettings = {
     color: UIA_THEME.DARK
   };
-  this.horizontalRadioSettings = {
-    color: UIA_THEME.SUCCESS,
-    align: RADIO_ALIGN.HORIZONTAL
+  this.primaryVerticalSettings = {
+    color: UIA_THEME.PRIMARY,
+    align: RADIO_ALIGN.VERTICAL
   };
-
+  this.secondaryVerticalSettings = {
+    color: UIA_THEME.SECONDARY,
+    align: RADIO_ALIGN.VERTICAL
+  };
+  this.warningVerticalSettings = {
+    color: UIA_THEME.WARNING,
+    align: RADIO_ALIGN.VERTICAL
+  };
+  this.successVerticalSettings = {
+    color: UIA_THEME.SUCCESS,
+    align: RADIO_ALIGN.VERTICAL
+  };
+  this.dangerVerticalSettings = {
+    color: UIA_THEME.DANGER,
+    align: RADIO_ALIGN.VERTICAL
+  };
+  this.infoVerticalSettings = {
+    color: UIA_THEME.INFO,
+    align: RADIO_ALIGN.VERTICAL
+  };
+  this.lightVerticalSettings = {
+    color: UIA_THEME.LIGHT,
+    align: RADIO_ALIGN.VERTICAL
+  };
+  this.darkVerticalSettings = {
+    color: UIA_THEME.DARK,
+    align: RADIO_ALIGN.VERTICAL
+  };
+  
+  this.icon = "<i class='fas fa-male'></i> Male"
+  
+  this.icon2 = "<i class='fas fa-female'></i> Female"
   }
 
 }
