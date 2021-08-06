@@ -100,10 +100,10 @@ export class DemoRadioComponent implements OnInit {
     color: UIA_THEME.DARK,
     align: RADIO_ALIGN.VERTICAL
   };
-  
-  this.icon = "<i class='fas fa-male'></i> Male"
-  
-  this.icon2 = "<i class='fas fa-female'></i> Female"
+
+  this.icon = '<i class=\'fas fa-male\'></i> Male';
+
+  this.icon2 = '<i class=\'fas fa-female\'></i> Female';
   }
 
 }

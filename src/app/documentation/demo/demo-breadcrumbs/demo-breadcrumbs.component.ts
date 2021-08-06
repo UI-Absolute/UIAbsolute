@@ -33,7 +33,7 @@ export class DemoBreadcrumbsComponent implements OnInit {
 
     this.pageNav = PAGE_NAV;
     this.demoCode = DEMO_CODE;
-    this.seperatorIcon = "<i class='fas fa-caret-right'></i>"
+    this.seperatorIcon = '<i class=\'fas fa-caret-right\'></i>';
 
     this.linkStructure = [
       {
@@ -73,35 +73,35 @@ export class DemoBreadcrumbsComponent implements OnInit {
 
     this.primarySettings = {
       color: UIA_THEME.PRIMARY
-    }
+    };
 
     this.secondarySettings = {
       color: UIA_THEME.SECONDARY
-    }
+    };
 
     this.successSettings = {
       color: UIA_THEME.SUCCESS
-    }
+    };
 
     this.warningSettings = {
       color: UIA_THEME.WARNING
-    }
+    };
 
     this.dangerSettings = {
       color: UIA_THEME.DANGER
-    }
+    };
 
     this.darkSettings = {
       color: UIA_THEME.DARK
-    }
+    };
 
     this.infoSettings = {
       color: UIA_THEME.INFO
-    }
+    };
 
     this.lightSettings = {
       color: UIA_THEME.LIGHT
-    }
+    };
   }
 
 }

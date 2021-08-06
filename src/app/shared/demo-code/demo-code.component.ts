@@ -17,12 +17,12 @@ export class DemoCodeComponent implements OnInit {
     this.previewOpen = 'template';
   }
 
-  copyCode(inputElement){
-    const tempInput = document.createElement("input");
+  copyCode(inputElement) {
+    const tempInput = document.createElement('input');
     tempInput.value = inputElement.innerText.trim();
     document.body.appendChild(tempInput);
     tempInput.select();
-    document.execCommand("copy");
+    document.execCommand('copy');
     document.body.removeChild(tempInput);
   }
 

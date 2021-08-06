@@ -21,9 +21,9 @@ export class BreadcrumbsComponent implements OnInit {
   ngOnInit() {
     this.applySettings(this.settings);
     if (this.seperator) {
-      this.seperator = '&nbsp;'+this.seperator+'&nbsp;';
+      this.seperator = '&nbsp;' + this.seperator + '&nbsp;';
     } else {
-      this.seperator = '&nbsp;>&nbsp;'
+      this.seperator = '&nbsp;>&nbsp;';
     }
   }
 

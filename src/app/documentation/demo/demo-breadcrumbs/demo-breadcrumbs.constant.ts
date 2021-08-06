@@ -23,11 +23,11 @@ export const DEMO_CODE = [{
     <span class="import-initial">import </span><span class="import-braces">{</span><span> UIABreadcrumbsModule </span>`
     + `<span class="import-braces">}</span>`
     + `<span class="import-initial"> from </span><span class="import-package">'ui-absolute'</span>;
-  
+
     <span class="import-initial">@NgModule({</span>
       <span>imports: </span><span class="import-package">[ UIABreadcrumbsModule,... ]</span>
     <span class="import-initial">})</span>
-  
+
   `},
 {
   id: 1,
@@ -139,4 +139,4 @@ export const DEMO_CODE = [{
       route: '/list/123'
     }
   ];
-`}]
+`}];

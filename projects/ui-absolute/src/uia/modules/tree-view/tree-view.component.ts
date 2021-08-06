@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-tree-view',
+  selector: 'uia-tree-view',
   templateUrl: './tree-view.component.html',
   styleUrls: ['./tree-view.component.css']
 })

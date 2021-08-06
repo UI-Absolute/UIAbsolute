@@ -32,7 +32,7 @@ export class DemoCheckboxComponent implements OnInit {
   demoCode;
   icon: string;
   icon2: string;
-  
+
 
   constructor() { }
 
@@ -47,7 +47,7 @@ export class DemoCheckboxComponent implements OnInit {
 
     this.primarySettings = {
       color: UIA_THEME.PRIMARY
-    }
+    };
 
     this.secondarySettings = {
       color: UIA_THEME.SECONDARY
@@ -104,9 +104,9 @@ export class DemoCheckboxComponent implements OnInit {
       align: CHECKBOX_ALIGN.VERTICAL
     };
 
-    this.icon = "<i class='far fa-credit-card'></i> Cards Accepted"
+    this.icon = '<i class=\'far fa-credit-card\'></i> Cards Accepted';
 
-    this.icon2 = "<i class='far fa-money-bill-alt'></i> Cash Accepted"
+    this.icon2 = '<i class=\'far fa-money-bill-alt\'></i> Cash Accepted';
 
   }
 

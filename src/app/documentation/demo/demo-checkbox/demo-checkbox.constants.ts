@@ -10,7 +10,7 @@ export const PAGE_NAV = [{
       name: 'Alignment', routerUrl: '/documentation/checkbox', fragment: 'alignment', children: []
     }, {
       name: 'Label', routerUrl: '/documentation/checkbox', fragment: 'label', children: []
-    },{
+    }, {
       name: 'Label with icon', routerUrl: '/documentation/checkbox', fragment: 'labelWithIcon', children: []
     }, {
       name: 'Checked', routerUrl: '/documentation/checkbox', fragment: 'checked', children: []
@@ -174,7 +174,7 @@ export const DEMO_CODE = [{
     color: UIA_THEME.PRIMARY,
     align: CHECKBOX_ALIGN.DEFAULT
   };`
-},{
+}, {
   id: 5,
   name: 'Checked',
   type: 'code',
@@ -186,11 +186,11 @@ export const DEMO_CODE = [{
   this.settings = {
     color: UIA_THEME.PRIMARY
   };
-  
+
   this.settings = {
     color: UIA_THEME.PRIMARY
   };`
-},{
+}, {
   id: 6,
   name: 'Disabled',
   type: 'code',
@@ -201,7 +201,7 @@ export const DEMO_CODE = [{
   this.settings = {
     color: UIA_THEME.PRIMARY
   };`
-},{
+}, {
   id: 7,
   name: 'Icon',
   type: 'code',

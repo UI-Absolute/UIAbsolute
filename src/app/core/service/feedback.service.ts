@@ -11,7 +11,7 @@ export class FeedbackService {
 
   submitFeedback(data): Observable<any> {
     const headers = { 'content-type': 'application/json' };
-    return this.http.post<any>('https://uiabsolute.com/rest/submitFeedback', data, { 'headers': headers });
+    return this.http.post<any>('https://uiabsolute.com/rest/submitFeedback', data, { headers });
   }
 
 }

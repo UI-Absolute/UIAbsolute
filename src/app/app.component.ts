@@ -37,12 +37,12 @@ export class AppComponent implements OnInit {
   }
 
   submitFeedback() {
-    if(this.feedbackForm.value && this.feedbackForm.value.rating) {
-      this.feedbackForm.value.rating = parseInt(this.feedbackForm.value.rating);
+    if (this.feedbackForm.value && this.feedbackForm.value.rating) {
+      this.feedbackForm.value.rating = parseInt(this.feedbackForm.value.rating, 10);
     }
     this.feedBackService.submitFeedback(this.feedbackForm.value)
       .subscribe(resp => {
-        if(resp.status) {
+        if (resp.status) {
           this.feedBackMessage = resp.response;
           this.feedbackForm.reset();
           this.errorMessage = null;

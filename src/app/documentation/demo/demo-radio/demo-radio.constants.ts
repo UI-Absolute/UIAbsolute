@@ -199,7 +199,7 @@ export const DEMO_CODE = [{
   this.icon = "&lt;i class='fas fa-male'&gt;&lt;/i&gt; Male"
   this.icon2 = "&lt;i class='fas fa-female'&gt;&lt;/i&gt; Female"
   `
-},{
+}, {
   id: 6,
   name: 'Checked',
   type: 'code',
@@ -211,11 +211,11 @@ export const DEMO_CODE = [{
   this.settings = {
     color: UIA_THEME.PRIMARY
   };
-  
+
   this.settings = {
     color: UIA_THEME.PRIMARY
   };`
-},{
+}, {
   id: 7,
   name: 'Disabled',
   type: 'code',

@@ -29,7 +29,7 @@ export class HeaderComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes: SimpleChanges) { }
 
-  openSidenav(){
+  openSidenav() {
     this.mobileHumburger = !this.mobileHumburger;
     this.mobilePanel.emit(this.mobileHumburger);
   }

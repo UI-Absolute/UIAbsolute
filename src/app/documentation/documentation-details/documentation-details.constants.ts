@@ -15,7 +15,7 @@ export const DEMO_CODE = [{
     <span class="import-initial">import </span><span class="import-braces">{</span><span> UIABadgesModule </span>`
         + `<span class="import-braces">}</span>`
         + `<span class="import-initial"> from </span><span class="import-package">'ui-absolute'</span>;
-  
+
     <span class="import-initial">@NgModule({</span>
       <span>imports: </span><span class="import-package">[ UIABadgesModule,... ]</span>
     <span class="import-initial">})</span>
@@ -66,4 +66,4 @@ export const DEMO_CODE = [{
     htmlCode: ``,
     componentCode: `
     @import '~ui-absolute/base';
-  `}]
+  `}];
