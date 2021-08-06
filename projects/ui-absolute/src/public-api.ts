@@ -12,4 +12,5 @@ export * from './uia/modules/buttons/buttons.module';
 export * from './uia/modules/tooltip/tooltip.module';
 export * from './uia/modules/checkbox/checkbox.module';
 export * from './uia/modules/radio/radio.module';
+export * from './uia/modules/breadcrumbs/breadcrumbs.module';
 export * from './models';

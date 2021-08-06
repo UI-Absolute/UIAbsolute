@@ -1,0 +1,13 @@
+<div id="breadcrumb-container">
+  <div class="d-inline-block" *ngFor="let link of links; let i = index">
+    <a 
+      [attr.data-selector]="'breadcrumb_' + link.id" 
+      class="cursor-pointer"
+      [style.color]="breadcrumbsSettings.color"
+      [ngClass]="{'active-route': i+1 === links.length }"
+      (click)="redirect(link.route, i+1, links.length)">
+      <span [innerHTML]="link.label"></span>
+    </a>
+    <span *ngIf="i+1 !== links.length" [style.color]="breadcrumbsSettings.color" [innerHTML]="seperator"></span>
+  </div>
+</div>

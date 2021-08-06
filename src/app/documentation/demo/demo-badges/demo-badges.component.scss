@@ -1,3 +1,5 @@
+@import '../../../../../projects/ui-absolute/src/uia/scss/components/variables';
+
 .dc-header {
   margin-top: 2rem;
   font-weight: 100;
@@ -11,7 +13,7 @@
 .highlight {
   padding: 1rem 1.5rem;
   margin-bottom: 1rem;
-  background-color: #f8f9fa;
+  background-color: $light;
 }
 
 .import-initial {

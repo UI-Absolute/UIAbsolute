@@ -5,6 +5,7 @@ export * from './interfaces/switches/switches.interface';
 export * from './interfaces/buttons/buttons.interface';
 export * from './interfaces/checkbox/checkbox.interface';
 export * from './interfaces/radio/radio.interface';
+export * from './interfaces/breadcrumbs/breadcrumbs.interface';
 
 // ENUM
 export * from './interfaces/theme/theme.enum';

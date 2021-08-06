@@ -15,6 +15,7 @@ import { DemoButtonsComponent } from './demo/demo-buttons/demo-buttons.component
 import { DemoTooltipComponent } from './demo/demo-tooltip/demo-tooltip.component';
 import { DemoCheckboxComponent } from './demo/demo-checkbox/demo-checkbox.component';
 import { DemoRadioComponent } from './demo/demo-radio/demo-radio.component';
+import { DemoBreadcrumbsComponent } from './demo/demo-breadcrumbs/demo-breadcrumbs.component';
 import { SharedModule } from '../shared/shared.module';
 import {
   UIABadgesModule,
@@ -23,7 +24,9 @@ import {
   UIAButtonsModule,
   UIATooltipModule,
   UIACheckboxModule,
-  UIARadioModule } from 'projects/ui-absolute/src/public-api';
+  UIARadioModule,
+  UIABreadcrumbsModule,
+ } from 'projects/ui-absolute/src/public-api';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,8 @@ import {
     DemoButtonsComponent,
     DemoTooltipComponent,
     DemoCheckboxComponent,
-    DemoRadioComponent
+    DemoRadioComponent,
+    DemoBreadcrumbsComponent
   ],
   imports: [
     CommonModule,
@@ -52,7 +56,8 @@ import {
     UIAButtonsModule,
     UIATooltipModule,
     UIACheckboxModule,
-    UIARadioModule
+    UIARadioModule,
+    UIABreadcrumbsModule
   ],
   exports: [
     SidePanelComponent

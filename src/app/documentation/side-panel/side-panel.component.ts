@@ -101,6 +101,11 @@ export class SidePanelComponent implements OnInit {
       name: 'Treeview',
       navigationUrl: '/documentation/underconstruction',
       visibility: false
+    },
+    {
+      name: 'Breadcrumbs',
+      navigationUrl: '/documentation/breadcrumbs',
+      visibility: true
     }];
     this.components.sort((a, b) => a.name.localeCompare(b.name));
   }

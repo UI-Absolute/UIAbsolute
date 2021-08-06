@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { UnderConstructionComponent } from './common-layout/under-construction/under-construction.component';
 import { DemoBadgesComponent } from './documentation/demo/demo-badges/demo-badges.component';
+import { DemoBreadcrumbsComponent } from './documentation/demo/demo-breadcrumbs/demo-breadcrumbs.component';
 import { DemoButtonsComponent } from './documentation/demo/demo-buttons/demo-buttons.component';
 import { DemoCheckboxComponent } from './documentation/demo/demo-checkbox/demo-checkbox.component';
 import { DemoFileUploaderComponent } from './documentation/demo/demo-file-uploader/demo-file-uploader.component';
@@ -70,6 +71,10 @@ const routes: Routes = [
       {
         path: 'radio',
         component: DemoRadioComponent
+      },
+      {
+        path: 'breadcrumbs',
+        component: DemoBreadcrumbsComponent
       }
      ]
   },

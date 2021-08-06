@@ -1,3 +1,5 @@
+@import './variables';
+
 .switch-checkbox {
   input[type="checkbox"] {
     opacity: 0;
@@ -57,7 +59,7 @@
     &:checked {
       + label {
         &:before {
-          background: #17a2b8;
+          background: $info;
           -webkit-transition: width 0.2s cubic-bezier(0, 0, 0, 0.1);
           -moz-transition: width 0.2s cubic-bezier(0, 0, 0, 0.1);
           -ms-transition: width 0.2s cubic-bezier(0, 0, 0, 0.1);
@@ -104,7 +106,7 @@
       &:checked {
         + label {
           &:before {
-            background: #007bff;
+            background: $primary;
           }
         }
       }
@@ -152,7 +154,7 @@
       &:checked {
         + label {
           &:before {
-            background: #007bff;
+            background: $primary;
           }
         }
       }
@@ -164,7 +166,7 @@
       &:checked {
         + label {
           &:before {
-            background: #6c757d;
+            background: $secondary;
           }
         }
       }
@@ -176,7 +178,7 @@
       &:checked {
         + label {
           &:before {
-            background: #f8f9fa;
+            background: $light;
           }
         }
       }
@@ -188,7 +190,7 @@
       &:checked {
         + label {
           &:before {
-            background: #343a40;
+            background: $dark;
           }
         }
       }
@@ -200,7 +202,7 @@
       &:checked {
         + label {
           &:before {
-            background: #17a2b8;
+            background: $info;
           }
         }
       }

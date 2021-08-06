@@ -27,9 +27,7 @@ export class HeaderComponent implements OnInit, OnChanges {
     this.version = environment.appVersion;
   }
 
-  ngOnChanges(changes: SimpleChanges) {
-    console.log(changes);
-  }
+  ngOnChanges(changes: SimpleChanges) { }
 
   openSidenav(){
     this.mobileHumburger = !this.mobileHumburger;

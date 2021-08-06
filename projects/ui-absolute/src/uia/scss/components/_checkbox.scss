@@ -1,3 +1,5 @@
+@import './variables';
+
 .checkbox {
   padding: 0;
   min-height: auto;
@@ -46,7 +48,7 @@
         + label {
           &:before {
             content: "\2714";
-            color: #007bff;
+            color: $primary;
           }
         }
       }
@@ -59,7 +61,7 @@
         + label {
           &:before {
             content: "\2714";
-            color: #37c936;
+            color: $success;
           }
         }
       }
@@ -72,7 +74,7 @@
         + label {
           &:before {
             content: "\2714";
-            color: #ffcc00;
+            color: $warning;
           }
         }
       }
@@ -85,7 +87,7 @@
         + label {
           &:before {
             content: "\2714";
-            color: #ff3c7e;
+            color: $danger;
           }
         }
       }
@@ -98,8 +100,7 @@
         + label {
           &:before {
             content: "\2714";
-            color: #6c757d;
-            ;
+            color: $secondary;
           }
         }
       }
@@ -112,7 +113,7 @@
         + label {
           &:before {
             content: "\2714";
-            color: #f8f9fa;
+            color: $light;
             ;
           }
         }
@@ -126,7 +127,7 @@
         + label {
           &:before {
             content: "\2714";
-            color: #343a40;
+            color: $dark;
             ;
           }
         }
@@ -140,7 +141,7 @@
         + label {
           &:before {
             content: "\2714";
-            color: #17a2b8;
+            color: $info;
             ;
           }
         }

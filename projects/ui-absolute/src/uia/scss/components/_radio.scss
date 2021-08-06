@@ -1,3 +1,5 @@
+@import './variables';
+
 .radio {
 	padding: 0;
     min-height: auto;
@@ -50,7 +52,7 @@
 				+label {
 					&:before {
 						content: "\25C9";
-						color: #007bff;
+						color: $primary;
 						border-width: 0px;
 						padding-top: 2px;
     					font-size: 30px;
@@ -67,7 +69,7 @@
 				+label {
 					&:before {
 						content: "\25C9";
-						color: #37c936;
+						color: $success;
 						border-width: 0px;
 						padding-top: 2px;
     					font-size: 30px;
@@ -84,7 +86,7 @@
 				+label {
 					&:before {
 						content: "\25C9";
-						color: #ffcc00;
+						color: $warning;
 						border-width: 0px;
 						padding-top: 2px;
     					font-size: 30px;
@@ -101,7 +103,7 @@
 				+label {
 					&:before {
 						content: "\25C9";
-						color: #ff3c7e;
+						color: $danger;
 						border-width: 0px;
 						padding-top: 2px;
     					font-size: 30px;
@@ -118,7 +120,7 @@
 				+label {
 					&:before {
 						content: "\25C9";
-						color: #6c757d;
+						color: $secondary;
 						border-width: 0px;
 						padding-top: 2px;
     					font-size: 30px;
@@ -135,7 +137,7 @@
 				+label {
 					&:before {
 						content: "\25C9";
-						color: #f8f9fa;
+						color: $light;
 						border-width: 0px;
 						padding-top: 2px;
     					font-size: 30px;
@@ -152,7 +154,7 @@
 				+label {
 					&:before {
 						content: "\25C9";
-						color: #343a40;
+						color: $dark;
 						border-width: 0px;
 						padding-top: 2px;
     					font-size: 30px;
@@ -169,7 +171,7 @@
 				+label {
 					&:before {
 						content: "\25C9";
-						color: #17a2b8;
+						color: $info;
 						border-width: 0px;
 						padding-top: 2px;
     					font-size: 30px;
