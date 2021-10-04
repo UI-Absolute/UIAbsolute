@@ -15,6 +15,7 @@ import { DemoButtonsComponent } from './demo/demo-buttons/demo-buttons.component
 import { DemoTooltipComponent } from './demo/demo-tooltip/demo-tooltip.component';
 import { DemoCheckboxComponent } from './demo/demo-checkbox/demo-checkbox.component';
 import { DemoRadioComponent } from './demo/demo-radio/demo-radio.component';
+import { DemoPaginationComponent } from './demo/demo-pagination/demo-pagination.component';
 import { DemoBreadcrumbsComponent } from './demo/demo-breadcrumbs/demo-breadcrumbs.component';
 import { SharedModule } from '../shared/shared.module';
 import {
@@ -26,7 +27,8 @@ import {
   UIACheckboxModule,
   UIARadioModule,
   UIABreadcrumbsModule,
- } from 'projects/ui-absolute/src/public-api';
+  UIAPaginationModule } from 'projects/ui-absolute/src/public-api';
+  
 
 @NgModule({
   declarations: [
@@ -41,6 +43,7 @@ import {
     DemoButtonsComponent,
     DemoTooltipComponent,
     DemoCheckboxComponent,
+    DemoPaginationComponent,
     DemoRadioComponent,
     DemoBreadcrumbsComponent
   ],
@@ -56,6 +59,7 @@ import {
     UIAButtonsModule,
     UIATooltipModule,
     UIACheckboxModule,
+    UIAPaginationModule,
     UIARadioModule,
     UIABreadcrumbsModule
   ],

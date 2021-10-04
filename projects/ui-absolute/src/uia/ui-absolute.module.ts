@@ -1,11 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { UIABadgesModule } from './modules/badges/badges.module';
 import { UiAbsoluteComponent } from './ui-absolute.component';
 
 @NgModule({
   declarations: [UiAbsoluteComponent],
   imports: [
-    UIABadgesModule
+    CommonModule
   ],
   exports: [UiAbsoluteComponent]
 })

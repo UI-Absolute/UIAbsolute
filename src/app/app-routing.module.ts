@@ -11,6 +11,7 @@ import { DemoRadioComponent } from './documentation/demo/demo-radio/demo-radio.c
 import { DemoSpinnersComponent } from './documentation/demo/demo-spinners/demo-spinners.component';
 import { DemoSwitchesComponent } from './documentation/demo/demo-switches/demo-switches.component';
 import { DemoTooltipComponent } from './documentation/demo/demo-tooltip/demo-tooltip.component';
+import { DemoPaginationComponent } from './documentation/demo/demo-pagination/demo-pagination.component';
 import { DocumentationDetailsComponent } from './documentation/documentation-details/documentation-details.component';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { GettingStartedComponent } from './documentation/getting-started/getting-started.component';
@@ -71,6 +72,10 @@ const routes: Routes = [
       {
         path: 'radio',
         component: DemoRadioComponent
+      },
+      {
+        path: 'pagination',
+        component: DemoPaginationComponent
       },
       {
         path: 'breadcrumbs',

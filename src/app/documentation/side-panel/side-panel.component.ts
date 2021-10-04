@@ -94,8 +94,8 @@ export class SidePanelComponent implements OnInit {
     },
     {
       name: 'Pagination',
-      navigationUrl: '/documentation/underconstruction',
-      visibility: false
+      navigationUrl: '/documentation/pagination',
+      visibility: true
     },
     {
       name: 'Treeview',
