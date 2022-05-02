@@ -16,6 +16,7 @@ import { DocumentationDetailsComponent } from './documentation/documentation-det
 import { DocumentationComponent } from './documentation/documentation.component';
 import { GettingStartedComponent } from './documentation/getting-started/getting-started.component';
 import { HomeComponent } from './home/home.component';
+import { DemoTreeViewComponent } from './documentation/demo/demo-tree-view/demo-tree-view.component';
 
 
 
@@ -80,6 +81,10 @@ const routes: Routes = [
       {
         path: 'breadcrumbs',
         component: DemoBreadcrumbsComponent
+      },
+      {
+        path: 'tree-view',
+        component: DemoTreeViewComponent
       }
      ]
   },

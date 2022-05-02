@@ -17,6 +17,7 @@ import { DemoCheckboxComponent } from './demo/demo-checkbox/demo-checkbox.compon
 import { DemoRadioComponent } from './demo/demo-radio/demo-radio.component';
 import { DemoPaginationComponent } from './demo/demo-pagination/demo-pagination.component';
 import { DemoBreadcrumbsComponent } from './demo/demo-breadcrumbs/demo-breadcrumbs.component';
+import { DemoTreeViewComponent } from './demo/demo-tree-view/demo-tree-view.component';
 import { SharedModule } from '../shared/shared.module';
 import {
   UIABadgesModule,
@@ -27,7 +28,8 @@ import {
   UIACheckboxModule,
   UIARadioModule,
   UIABreadcrumbsModule,
-  UIAPaginationModule } from 'projects/ui-absolute/src/public-api';
+  UIAPaginationModule,
+  UIATreeViewModule } from 'projects/ui-absolute/src/public-api';
   
 
 @NgModule({
@@ -45,7 +47,8 @@ import {
     DemoCheckboxComponent,
     DemoPaginationComponent,
     DemoRadioComponent,
-    DemoBreadcrumbsComponent
+    DemoBreadcrumbsComponent,
+    DemoTreeViewComponent
   ],
   imports: [
     CommonModule,
@@ -61,7 +64,8 @@ import {
     UIACheckboxModule,
     UIAPaginationModule,
     UIARadioModule,
-    UIABreadcrumbsModule
+    UIABreadcrumbsModule,
+    UIATreeViewModule
   ],
   exports: [
     SidePanelComponent

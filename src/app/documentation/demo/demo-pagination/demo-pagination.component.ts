@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PaginationConfig, PAGINATION_ALIGN, PAGINATION_SIZE, PAGINATION_TYPE } from 'projects/ui-absolute/src/models';
+import { PaginationConfig, PAGINATION_ALIGN, PAGINATION_SIZE, PAGINATION_TYPE } from 'ui-absolute';
 import { DEMO_CODE, PAGE_NAV } from './demo-pagination.constants';
 
 @Component({

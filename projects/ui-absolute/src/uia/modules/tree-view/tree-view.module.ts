@@ -6,6 +6,9 @@ import { TreeViewComponent } from './tree-view.component';
   declarations: [TreeViewComponent],
   imports: [
     CommonModule
+  ],
+  exports: [
+    TreeViewComponent
   ]
 })
-export class TreeViewModule { }
+export class UIATreeViewModule { }

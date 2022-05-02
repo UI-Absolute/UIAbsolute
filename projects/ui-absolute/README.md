@@ -76,6 +76,7 @@
 | ui-absolute |    Bootstrap   |  Angular  |
 | ----------- | -------------- | --------- |
 | 1.x.x       | 3.x.x or 4.x.x | 8.x.x     |
+| 2.x.x       | 3.x.x or 4.x.x | 9.x.x     |
 
 
 ### License

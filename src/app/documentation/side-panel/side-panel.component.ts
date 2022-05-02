@@ -99,8 +99,8 @@ export class SidePanelComponent implements OnInit {
     },
     {
       name: 'Treeview',
-      navigationUrl: '/documentation/underconstruction',
-      visibility: false
+      navigationUrl: '/documentation/tree-view',
+      visibility: true
     },
     {
       name: 'Breadcrumbs',

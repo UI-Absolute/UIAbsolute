@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { PaginationConfig, PAGINATION_ALIGN, PAGINATION_SIZE, PAGINATION_TYPE } from 'projects/ui-absolute/src/models';
+import { PaginationConfig, PAGINATION_ALIGN, PAGINATION_SIZE, PAGINATION_TYPE } from '../../../models';
 
 
 @Component({
